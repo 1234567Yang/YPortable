@@ -1,15 +1,17 @@
-button[class*=brightblue-bright] {
+button[class=bright] {
   background:rgba(0,153,255,0.8);
   color:rgb(204,255,255);
   border:none;
   border-radius:10px;
   -webkit-transition-duration: 0.3s;
+  -webkit-animation-timing-function:background ease-in;
+  -webkit-animation-timing-function:color ease-out;
 }
-button[class*=brightblue-bright]:hover {
+button[class=bright]:hover {
   color:rgb(51,153,255);
   background:rgba(204,255,255,0.9);
 }
-button[class*=brightblue-bright]:active{
+button[class=bright]:active{
   color:rgb(31,133,235);
   background:rgba(184,235,235,0.9);
 }
