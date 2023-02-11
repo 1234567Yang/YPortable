@@ -2,7 +2,9 @@
 .selfFit{
   display:inline-block;
 }
+
 /*--button--*/
+
 button[class*=dark] {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
@@ -63,8 +65,8 @@ button[class*=bright]:active{
   background:rgb(20,130,255);
 }
 
-
 /*--p--*/
+
 p[class*=dark] {
   background:rgb(20,100,170);
   color:rgb(100,200,255);
@@ -81,4 +83,91 @@ p[class*=bright] {
   color:rgb(50,200,255);
   background:rgb(235,255,255);
   border-radius:10px;
+}
+
+/*--input - text--*/
+
+input[class*=bright][type=text] {
+  color: rgb(50,200,255);
+  background: rgb(235,255,255);
+  border-style: solid;
+  border-color: rgb(50,200,255);
+  border-radius: 5px;
+  -webkit-transition-duration: 0.35s;
+  -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
+  -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
+}
+
+input[class*=bright][type=text]::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(150,230,255);
+}
+input[class*=bright][type=text]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(235,255,255);
+  opacity: 1;
+}
+
+input[class*=bright][type=text]:focus {
+  outline: none !important;
+  border-color: rgb(50,150,255) !important;
+  color: rgb(50,150,255) !important;
+}
+
+/*--*/
+
+input[class*=middle][type=text] {
+  color: rgb(50,150,255);
+  background: rgb(200,220,255);
+  border-style: solid;
+  border-color: rgb(50,150,255);
+  border-radius: 5px;
+  -webkit-transition-duration: 0.35s;
+  -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
+  -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
+}
+
+input[class*=middle][type=text]::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(50,190,255);
+}
+input[class*=middle][type=text]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(50,190,255);
+  opacity: 1;
+}
+
+input[class*=middle][type=text]:focus {
+  outline: none !important;
+  border-color: rgb(20,100,255) !important;
+  color: rgb(20,100,255) !important;
+}
+
+/*--*/
+
+input[class*=dark][type=text] {
+  color: rgb(50,180,220);
+  background: rgb(50,100,205);
+  border-style: solid;
+  border-color:rgb(50,180,220);
+  border-radius: 5px;
+  -webkit-transition-duration: 0.35s;
+  -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
+  -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
+}
+
+input[class*=dark][type=text]::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(80,180,255);
+}
+input[class*=dark][type=text]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(80,180,255);
+  opacity: 1;
+}
+
+input[class*=dark][type=text]:focus {
+  outline: none !important;
+  border-color: rgb(50,200,255); !important;
+  color: rgb(50,200,255) !important;
 }
