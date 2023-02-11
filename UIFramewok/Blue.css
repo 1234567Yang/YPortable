@@ -1,4 +1,4 @@
-button[class=bright] {
+button[class=dark] {
   background:rgba(0,153,255,0.8);
   color:rgb(204,255,255);
   border:none;
@@ -8,11 +8,11 @@ button[class=bright] {
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-button[class=bright]:hover {
+button[class=dark]:hover {
   color:rgb(51,153,255);
   background:rgba(204,255,255,0.9);
 }
-button[class=bright]:active{
+button[class=dark]:active{
   color:rgb(21,153,255);
   background:rgba(180,225,225,0.9);
 }
