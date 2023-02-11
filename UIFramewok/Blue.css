@@ -18,8 +18,9 @@ button[class*=dark]:hover {
   color:rgb(205,255,255);
 }
 button[class*=dark]:active{
-  color:rgb(20,155,255);
-  background:rgb(180,225,225);
+  -webkit-transition-duration: 0.1s;
+  color:rgb(160,255,255);
+  background:rgb(20,120,200);
 }
 /*--*/
 button[class*=middle] {
@@ -37,6 +38,7 @@ button[class*=middle]:hover {
   background:rgb(205,255,255);
 }
 button[class*=middle]:active{
+  -webkit-transition-duration: 0.1s;
   color:rgb(20,155,255);
   background:rgb(180,225,225);
 }
@@ -56,6 +58,7 @@ button[class*=bright]:hover {
   color:rgb(205,255,255);
 }
 button[class*=bright]:active{
+  -webkit-transition-duration: 0.1s;
   color:rgb(160,255,255);
   background:rgb(20,130,255);
 }
