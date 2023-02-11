@@ -1,3 +1,4 @@
+/*--button--*/
 button[class=dark] {
   background:rgba(0,153,255,0.8);
   color:rgb(204,255,255);
@@ -16,3 +17,23 @@ button[class=dark]:active{
   color:rgb(21,153,255);
   background:rgba(180,225,225,0.9);
 }
+/*--*/
+button[class=bright] {
+  color:rgb(50,150,255);
+  background:rgba(205,255,255,0.9);
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+  -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
+  -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
+}
+button[class=bright]:hover {
+  background:rgba(0,155,255,0.8);
+  color:rgb(205,255,255);
+}
+button[class=bright]:active{
+  color:rgb(160,255,255);
+  background:rgba(20,130,255,0.9);
+}
+/*--p--*/
