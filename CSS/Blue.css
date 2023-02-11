@@ -16,13 +16,13 @@ button[class*=dark] {
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 button[class*=dark]:hover {
-  background:rgb(0,155,255);
-  color:rgb(205,255,255);
+  background:rgb(0,50,120);
+  color:rgb(0,130,220);
 }
 button[class*=dark]:active{
   -webkit-transition-duration: 0.1s;
-  color:rgb(160,255,255);
-  background:rgb(20,120,200);
+  background:rgb(0,20,100);
+  color:rgb(0,100,200);
 }
 /*--*/
 button[class*=middle] {
@@ -36,13 +36,13 @@ button[class*=middle] {
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 button[class*=middle]:hover {
-  color:rgb(50,155,255);
-  background:rgb(205,255,255);
+  background:rgb(0,120,220);
+  color:rgb(190,230,255);
 }
 button[class*=middle]:active{
   -webkit-transition-duration: 0.1s;
-  color:rgb(20,155,255);
-  background:rgb(180,225,225);
+  background:rgb(0,100,220);
+  color:rgb(120,230,255);
 }
 /*--*/
 button[class*=bright] {
@@ -56,13 +56,13 @@ button[class*=bright] {
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 button[class*=bright]:hover {
-  background:rgb(0,155,255);
-  color:rgb(205,255,255);
+  color:rgb(20,120,230);
+  background:rgb(160,230,255);
 }
 button[class*=bright]:active{
   -webkit-transition-duration: 0.1s;
-  color:rgb(160,255,255);
-  background:rgb(20,130,255);
+  color:rgb(10,60,255);
+  background:rgb(120,230,255);
 }
 
 /*--p--*/
@@ -146,7 +146,7 @@ input[class*=middle][type=text]:focus {
 /*--*/
 
 input[class*=dark][type=text] {
-  color: rgb(50,180,220);
+  color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: solid;
   border-color:rgb(50,180,220);
@@ -168,6 +168,6 @@ input[class*=dark][type=text]::-moz-placeholder {
 
 input[class*=dark][type=text]:focus {
   outline: none !important;
-  border-color: rgb(50,200,255); !important;
-  color: rgb(50,200,255) !important;
+  border-color: rgb(160,230,255) !important;
+  color: rgb(160,230,255) !important;
 }
