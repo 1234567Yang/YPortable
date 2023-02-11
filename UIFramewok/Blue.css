@@ -63,13 +63,19 @@ button[class*=bright]:active{
 
 /*--p--*/
 p[class*=dark] {
-  background:rgb(0,80,150);
-  color:rgb(0,155,255);
+  background:rgb(20,100,170);
+  color:rgb(100,200,255);
+  border-radius:10px;
+}
+/*--*/
+p[class*=middle] {
+  background:rgb(50,150,220);
+  color:rgb(205,255,255);
   border-radius:10px;
 }
 /*--*/
 p[class*=bright] {
-  color:rgb(50,150,255);
-  background:rgb(205,255,255);
+  color:rgb(50,200,255);
+  background:rgb(235,255,255);
   border-radius:10px;
 }
