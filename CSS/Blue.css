@@ -286,8 +286,8 @@ input[class*=bright][type=checkbox]:not(checked):after {
   display: block;
   visibility: hidden;
   border: solid rgb(240,255,255); /*to hide the √ smoothly*/
-  width: 0%;
-  height: 0%;
+  width: 0px;
+  height: 0px;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg) translate(-5px,-12px) !important; 
   position: relative;
