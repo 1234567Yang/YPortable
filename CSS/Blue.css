@@ -263,7 +263,7 @@ input[class*=bright][type=checkbox]:checked:before {
   display: block;
   position: relative;
   width: 75%;
-  height: 9.2%;
+  height: 3.5%;
   top: 0%;
   left: 0%;
   border: 2px solid rgb(20,150,255);
@@ -276,7 +276,7 @@ input[class*=bright][type=checkbox]:not(checked):before {
   display: block;
   position: relative;
   width: 75%;
-  height: 9.2%;
+  height: 3.5%;
   top: 0%;
   left: 0%;
   border: 2px solid rgb(50,150,255);
@@ -302,7 +302,7 @@ input[class*=bright][type=checkbox]:checked:after {
   display: block;
   visibility: visible;
   width: 30%;
-  height: 8%;
+  height: 3.3%;
   border: solid rgb(50,150,255);
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg) translate(-130%,-120%) !important; 
