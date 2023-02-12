@@ -23,11 +23,11 @@ input[class*=bright][type=checkbox]:checked + label{
 input[class*=bright][type=checkbox]:checked:before {
   content: "";
   display: block;
-  position: absolute;
-  width: 1.2%;
-  height: 7.3%;
-  top: 6.5%;
-  left: 1.2%;
+  position: relative;
+  width: 75%;
+  height: 9.2%;
+  top: 0%;
+  left: 0%;
   border: 2px solid rgb(20,150,255);
   border-radius: 3px;
   background: rgb(220,255,255);
@@ -36,11 +36,11 @@ input[class*=bright][type=checkbox]:checked:before {
 input[class*=bright][type=checkbox]:not(checked):before {
   content: "";
   display: block;
-  position: absolute;
-  width: 1.2%;
-  height: 7.3%;
-  top: 6.5%;
-  left: 1.2%;
+  position: relative;
+  width: 75%;
+  height: 9.2%;
+  top: 0%;
+  left: 0%;
   border: 2px solid rgb(50,150,255);
   border-radius: 3px;
   background: rgb(240,255,255);
@@ -49,12 +49,12 @@ input[class*=bright][type=checkbox]:not(checked):after {
   content: "";
   display: block;
   visibility: hidden;
-  width: 0.8%;
-  height: 7%;
   border: solid rgb(240,255,255); /*to hide the √ smoothly*/
+  width: 0%;
+  height: 0%;
   border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg) !important; 
-  position: absolute;
+  -webkit-transform: rotate(45deg) translate(-100%,-300%) !important; 
+  position: relative;
   top: 5.5%;
   left: 1.5%;
   -webkit-transition: 0.35s;
@@ -63,12 +63,11 @@ input[class*=bright][type=checkbox]:checked:after {
   content: "";
   display: block;
   visibility: visible;
-  width: 0.8%;
-  height: 7%;
+  width: 30%;
+  height: 8%;
   border: solid rgb(50,150,255);
   border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg) !important; 
-  position: absolute;
-  top: 5.5%;
-  left: 1.5%;
+  -webkit-transform: rotate(45deg) translate(-130%,-120%) !important; 
+  position: relative;
+
 }
