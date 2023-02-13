@@ -248,7 +248,7 @@ input[class*=bright][type=checkbox] + label {
   -webkit-transition-duration: 0.35s;
 }
 input[class*=bright][type=checkbox]:hover, input[class*=bright][type=checkbox] + label:hover {
-  -webkit-box-shadow: 1px 1px 5px rgb(205,255,255);
+  -webkit-box-shadow: 1px 1px 1px rgb(205,255,255);
 }
 input[class*=bright][type=checkbox]:active, input[class*=bright][type=checkbox] + label:active{
   -webkit-transition-duration: 0.1s;
@@ -258,7 +258,7 @@ input[class*=bright][type=checkbox]:checked + label{
   background:rgb(200,250,250);
   color:rgb(40,140,240);
 }
-input[class*=bright][type=checkbox]:checked:before {
+input[class*=bright][type=checkbox]:checked::before {
   content: "";
   display: block;
   position: relative;
@@ -269,7 +269,7 @@ input[class*=bright][type=checkbox]:checked:before {
   background: rgb(220,255,255);
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=checkbox]:not(checked):before {
+input[class*=bright][type=checkbox]:not(checked)::before {
   content: "";
   display: block;
   position: relative;
@@ -279,7 +279,7 @@ input[class*=bright][type=checkbox]:not(checked):before {
   border-radius: 3px;
   background: rgb(240,255,255);
 }
-input[class*=bright][type=checkbox]:not(checked):after {
+input[class*=bright][type=checkbox]:not(checked)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -293,13 +293,157 @@ input[class*=bright][type=checkbox]:not(checked):after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=checkbox]:checked:after {
+input[class*=bright][type=checkbox]:checked::after {
   content: "";
   display: block;
   visibility: visible;
   width: 5px;
   height: 12px;
   border: solid rgb(50,150,255);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg) translate(-8px,-15px) !important; 
+  position: relative;
+
+}
+
+/*--*/
+
+input[class*=middle][type=checkbox]{
+  cursor:pointer;
+}
+input[class*=middle][type=checkbox] + label {
+  color:rgb(10,50,255);
+  background:rgb(150,220,255);
+  border-style:none;
+  border-radius:5px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+}
+input[class*=middle][type=checkbox]:hover, input[class*=middle][type=checkbox] + label:hover {
+  -webkit-box-shadow: 1px 1px 1px rgb(150,220,255);
+}
+input[class*=middle][type=checkbox]:active, input[class*=middle][type=checkbox] + label:active{
+  -webkit-transition-duration: 0.1s;
+  -webkit-box-shadow: 1px 1px 5px rgb(150,220,255);
+}
+input[class*=middle][type=checkbox]:checked + label{
+  background:rgb(120,210,255);
+  color:rgb(10,10,255);
+}
+input[class*=middle][type=checkbox]:checked::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(50,100,255);
+  border-radius: 3px;
+  background: rgb(180,220,255);
+  -webkit-transition: 0.35s;
+}
+input[class*=middle][type=checkbox]:not(checked)::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(50,130,240);
+  border-radius: 3px;
+  background: rgb(200,240,255);
+}
+input[class*=middle][type=checkbox]:not(checked)::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  border: solid rgba(150,220,255,0); /*to hide the √ smoothly*/
+  width: 0px;
+  height: 0px;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg) translate(-5px,-12px) !important; 
+  position: relative;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: 0.35s;
+}
+input[class*=middle][type=checkbox]:checked::after {
+  content: "";
+  display: block;
+  visibility: visible;
+  width: 5px;
+  height: 12px;
+  border: solid rgb(50,50,255);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg) translate(-8px,-15px) !important; 
+  position: relative;
+
+}
+
+/*--*/
+
+input[class*=dark][type=checkbox]{
+  cursor:pointer;
+}
+input[class*=dark][type=checkbox] + label {
+  color: rgb(120,220,255);
+  background: rgb(50,100,205);
+  border-style:none;
+  border-radius:5px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+}
+input[class*=dark][type=checkbox]:hover, input[class*=dark][type=checkbox] + label:hover {
+  -webkit-box-shadow: 1px 1px 1px rgb(50,100,205);
+}
+input[class*=dark][type=checkbox]:active, input[class*=dark][type=checkbox] + label:active{
+  -webkit-transition-duration: 0.1s;
+  -webkit-box-shadow: 1px 1px 5px rgb(50,100,205);
+}
+input[class*=dark][type=checkbox]:checked + label{
+  color: rgb(120,230,255);
+  background: rgb(20,90,205);
+}
+input[class*=dark][type=checkbox]:checked::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(20,90,205);
+  border-radius: 3px;
+  background: rgb(100,180,255);
+  -webkit-transition: 0.35s;
+}
+input[class*=dark][type=checkbox]:not(checked)::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(50,50,255);
+  border-radius: 3px;
+  background: rgb(160,200,255);
+}
+input[class*=dark][type=checkbox]:not(checked)::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  border: solid rgba(50,100,205,0); /*to hide the √ smoothly*/
+  width: 0px;
+  height: 0px;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg) translate(-5px,-12px) !important; 
+  position: relative;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: 0.35s;
+}
+input[class*=dark][type=checkbox]:checked::after {
+  content: "";
+  display: block;
+  visibility: visible;
+  width: 5px;
+  height: 12px;
+  border: solid rgb(20,10,255);
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg) translate(-8px,-15px) !important; 
   position: relative;
