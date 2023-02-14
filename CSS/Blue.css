@@ -4,48 +4,7 @@
 }
 
 /*--button--*/
-
-button[class*=dark] {
-  background:rgb(0,80,150);
-  color:rgb(0,155,255);
-  border-style:none;
-  border-radius:5px;
-  cursor:pointer;
-  -webkit-transition-duration: 0.35s;
-  -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
-  -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
-}
-button[class*=dark]:hover {
-  background:rgb(0,50,120);
-  color:rgb(0,130,220);
-}
-button[class*=dark]:active{
-  -webkit-transition-duration: 0.1s;
-  background:rgb(0,20,100);
-  color:rgb(0,100,200);
-}
-/*--*/
-button[class*=middle] {
-  background:rgb(0,155,255);
-  color:rgb(205,255,255);
-  border-style:none;
-  border-radius:5px;
-  cursor:pointer;
-  -webkit-transition-duration: 0.35s;
-  -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
-  -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
-}
-button[class*=middle]:hover {
-  background:rgb(0,120,220);
-  color:rgb(190,230,255);
-}
-button[class*=middle]:active{
-  -webkit-transition-duration: 0.1s;
-  background:rgb(0,100,220);
-  color:rgb(120,230,255);
-}
-/*--*/
-button[class*=bright] {
+button[class*=bright]:not(:disabled) {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -55,14 +14,83 @@ button[class*=bright] {
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-button[class*=bright]:hover {
+button[class*=bright]:hover:not(:disabled) {
   color:rgb(20,120,230);
   background:rgb(160,230,255);
 }
-button[class*=bright]:active{
+button[class*=bright]:active:not(:disabled){
   -webkit-transition-duration: 0.1s;
   color:rgb(10,60,255);
   background:rgb(120,230,255);
+}
+/*--*/
+button[class*=middle]:not(:disabled) {
+  background:rgb(0,155,255);
+  color:rgb(205,255,255);
+  border-style:none;
+  border-radius:5px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+  -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
+  -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
+}
+button[class*=middle]:hover:not(:disabled) {
+  background:rgb(0,120,220);
+  color:rgb(190,230,255);
+}
+button[class*=middle]:active:not(:disabled){
+  -webkit-transition-duration: 0.1s;
+  background:rgb(0,100,220);
+  color:rgb(120,230,255);
+}
+/*--*/
+button[class*=dark]:not(:disabled) {
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+  border-style:none;
+  border-radius:5px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+  -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
+  -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
+}
+button[class*=dark]:hover:not(:disabled) {
+  background:rgb(0,50,120);
+  color:rgb(0,130,220);
+}
+button[class*=dark]:active:not(:disabled){
+  -webkit-transition-duration: 0.1s;
+  background:rgb(0,20,100);
+  color:rgb(0,100,200);
+}
+
+/*-- button - disabled --*/
+
+button[class*=bright]:disabled {
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+/*--*/
+button[class*=middle]:disabled {
+  background:rgb(0,155,255);
+  color:rgb(205,255,255);
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+/*--*/
+button[class*=dark]:disabled {
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
 }
 
 /*--p--*/
@@ -85,9 +113,9 @@ p[class*=bright] {
   border-radius:10px;
 }
 
-/*--input - text--*/
+/*--input - text - password - search - url - tel - email --*/
 
-input[class*=bright][type=text],[class*=bright][type=password],[class*=bright][type=search],[class*=bright][type=url],[class*=bright][type=tel],[class*=bright][type=email],[class*=bright][type=number] {
+input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: solid;
@@ -98,17 +126,17 @@ input[class*=bright][type=text],[class*=bright][type=password],[class*=bright][t
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class*=bright][type=text]::-webkit-input-placeholder,[class*=bright][type=password]::-webkit-input-placeholder,[class*=bright][type=search]::-webkit-input-placeholder,[class*=bright][type=url]::-webkit-input-placeholder,[class*=bright][type=tel]::-webkit-input-placeholder,[class*=bright][type=email]::-webkit-input-placeholder,[class*=bright][type=number]::-webkit-input-placeholder {
+input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(150,230,255);
 }
-input[class*=bright][type=text]::-moz-placeholder,[class*=bright][type=password]::-moz-placeholder,[class*=bright][type=search]::-moz-placeholder,[class*=bright][type=url]::-moz-placeholder,[class*=bright][type=tel]::-moz-placeholder,[class*=bright][type=email]::-moz-placeholder,[class*=bright][type=number]::-moz-placeholder {
+input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(235,255,255);
   opacity: 1;
 }
 
-input[class*=bright][type=text]:focus,[class*=bright][type=password]:focus,[class*=bright][type=search]:focus,[class*=bright][type=url]:focus,[class*=bright][type=tel]:focus,[class*=bright][type=email]:focus,[class*=bright][type=number]:focus {
+input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus {
   outline: none !important;
   border-color: rgb(50,150,255) !important;
   color: rgb(50,150,255) !important;
@@ -117,7 +145,7 @@ input[class*=bright][type=text]:focus,[class*=bright][type=password]:focus,[clas
 
 /*--*/
 
-input[class*=middle][type=text],[class*=middle][type=password],[class*=middle][type=search],[class*=middle][type=url],[class*=middle][type=tel],[class*=middle][type=email],[class*=middle][type=number] {
+input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
   color: rgb(50,150,255);
   background: rgb(200,220,255);
   border-style: solid;
@@ -128,17 +156,17 @@ input[class*=middle][type=text],[class*=middle][type=password],[class*=middle][t
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class*=middle][type=text]::-webkit-input-placeholder,[class*=middle][type=password]::-webkit-input-placeholder,[class*=middle][type=search]::-webkit-input-placeholder,[class*=middle][type=url]::-webkit-input-placeholder,[class*=middle][type=tel]::-webkit-input-placeholder,[class*=middle][type=email]::-webkit-input-placeholder,[class*=middle][type=number]::-webkit-input-placeholder {
+input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(50,190,255);
 }
-input[class*=middle][type=text]::-moz-placeholder,[class*=middle][type=password]::-moz-placeholder,[class*=middle][type=search]::-moz-placeholder,[class*=middle][type=url]::-moz-placeholder,[class*=middle][type=tel]::-moz-placeholder,[class*=middle][type=email]::-moz-placeholder,[class*=middle][type=number]::-moz-placeholder {
+input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(50,190,255);
   opacity: 1;
 }
 
-input[class*=middle][type=text]:focus,[class*=middle][type=password]:focus,[class*=middle][type=search]:focus,[class*=middle][type=url]:focus,[class*=middle][type=tel]:focus,[class*=middle][type=email]:focus,[class*=middle][type=number]:focus {
+input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus {
   outline: none !important;
   border-color: rgb(20,100,255) !important;
   color: rgb(20,100,255) !important;
@@ -147,7 +175,7 @@ input[class*=middle][type=text]:focus,[class*=middle][type=password]:focus,[clas
 
 /*--*/
 
-input[class*=dark][type=text],[class*=dark][type=password],[class*=dark][type=search],[class*=dark][type=url],[class*=dark][type=tel],[class*=dark][type=email],[class*=dark][type=number] {
+input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: solid;
@@ -158,27 +186,93 @@ input[class*=dark][type=text],[class*=dark][type=password],[class*=dark][type=se
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class*=dark][type=text]::-webkit-input-placeholder,[class*=dark][type=password]::-webkit-input-placeholder,[class*=dark][type=search]::-webkit-input-placeholder,[class*=dark][type=url]::-webkit-input-placeholder,[class*=dark][type=tel]::-webkit-input-placeholder,[class*=dark][type=email]::-webkit-input-placeholder,[class*=dark][type=number]::-webkit-input-placeholder {
+input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(80,180,255);
 }
-input[class*=dark][type=text]::-moz-placeholder,[class*=dark][type=password]::-moz-placeholder,[class*=dark][type=search]::-moz-placeholder,[class*=dark][type=url]::-moz-placeholder,[class*=dark][type=tel]::-moz-placeholder,[class*=dark][type=email]::-moz-placeholder,[class*=dark][type=number]::-moz-placeholder {
+input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(80,180,255);
   opacity: 1;
 }
 
-input[class*=dark][type=text]:focus,[class*=dark][type=password]:focus,[class*=dark][type=search]:focus,[class*=dark][type=url]:focus,[class*=dark][type=tel]:focus,[class*=dark][type=email]:focus,[class*=dark][type=number]:focus {
+input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):focus:not(:disabled) {
   outline: none !important;
   border-color: rgb(30,160,220) !important;
   color: rgb(180,240,255) !important;
   -webkit-box-shadow: 1px 1px 5px rgb(30,160,220);
 }
 
+/*--input - disabled - text--*/
+
+input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+  color: rgb(50,200,255);
+  background: rgb(235,255,255);
+  border-style: dotted;
+  border-color: rgb(50,200,255);
+  border-radius: 5px;
+  filter:grayscale(40%);
+  cursor:not-allowed;
+}
+
+input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(150,230,255);
+}
+input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(235,255,255);
+  opacity: 1;
+}
+
+/*--*/
+
+input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+  color: rgb(50,150,255);
+  background: rgb(200,220,255);
+  border-style: dotted;
+  border-color: rgb(50,150,255);
+  border-radius: 5px;
+  filter:grayscale(40%);
+  cursor:not-allowed;
+}
+
+input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(50,190,255);
+}
+input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(50,190,255);
+  opacity: 1;
+}
+
+/*--*/
+
+input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+  color: rgb(120,220,255);
+  background: rgb(50,100,205);
+  border-style: dotted;
+  border-color:rgb(50,180,220);
+  border-radius: 5px;
+  filter:grayscale(40%);
+  cursor:not-allowed;
+}
+
+input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(80,180,255);
+}
+input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(80,180,255);
+  opacity: 1;
+}
+
 
 /*--input - date - month - week - time - datetime - datetime-local --*/
 
-input[class*=bright][type=date],[class*=bright][type=month],[class*=bright][type=week],[class*=bright][type=time],[class*=bright][type=datetime],[class*=bright][type=datetime-local] {
+input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: solid;
@@ -188,7 +282,7 @@ input[class*=bright][type=date],[class*=bright][type=month],[class*=bright][type
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-input[class*=bright][type=date]:focus,[class*=bright][type=month]:focus,[class*=bright][type=week]:focus,[class*=bright][type=time]:focus,[class*=bright][type=datetime]:focus,[class*=bright][type=datetime-local]:focus {
+input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
   outline: none !important;
   border-color: rgb(50,150,255) !important;
   color: rgb(50,150,255) !important;
@@ -197,7 +291,8 @@ input[class*=bright][type=date]:focus,[class*=bright][type=month]:focus,[class*=
 
 /*--*/
 
-input[class*=middle][type=date],[class*=middle][type=month],[class*=middle][type=week],[class*=middle][type=time],[class*=middle][type=datetime],[class*=middle][type=datetime-local] {
+input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
+
   color: rgb(50,150,255);
   background: rgb(200,220,255);
   border-style: solid;
@@ -207,7 +302,7 @@ input[class*=middle][type=date],[class*=middle][type=month],[class*=middle][type
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-input[class*=middle][type=date]:focus,[class*=middle][type=month]:focus,[class*=middle][type=week]:focus,[class*=middle][type=time]:focus,[class*=middle][type=datetime]:focus,[class*=middle][type=datetime-local]:focus {
+input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
   outline: none !important;
   border-color: rgb(20,100,255) !important;
   color: rgb(20,100,255) !important;
@@ -216,7 +311,7 @@ input[class*=middle][type=date]:focus,[class*=middle][type=month]:focus,[class*=
 
 /*--*/
 
-input[class*=dark][type=date],[class*=dark][type=month],[class*=dark][type=week],[class*=dark][type=time],[class*=dark][type=datetime],[class*=dark][type=datetime-local] {
+input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: solid;
@@ -227,19 +322,56 @@ input[class*=dark][type=date],[class*=dark][type=month],[class*=dark][type=week]
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class*=dark][type=date]:focus,[class*=dark][type=month]:focus,[class*=dark][type=week]:focus,[class*=dark][type=time]:focus,[class*=dark][type=datetime]:focus,[class*=dark][type=datetime-local]:focus {
+input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
   outline: none !important;
   border-color: rgb(30,160,220) !important;
   color: rgb(180,240,255) !important;
   -webkit-box-shadow: 1px 1px 5px rgb(30,160,220);
 }
 
+/*--input - date - month - week - time - datetime - datetime-local - disabled --*/
+
+input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
+  color: rgb(50,200,255);
+  background: rgb(235,255,255);
+  border-style: dotted;
+  border-color: rgb(50,200,255);
+  border-radius: 5px;
+  filter:grayscale(40%);
+  cursor:not-allowed;
+}
+
+/*--*/
+
+input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
+
+  color: rgb(50,150,255);
+  background: rgb(200,220,255);
+  border-style: dotted;
+  border-color: rgb(50,150,255);
+  border-radius: 5px;
+  filter:grayscale(40%);
+  cursor:not-allowed;
+}
+
+/*--*/
+
+input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
+  color: rgb(120,220,255);
+  background: rgb(50,100,205);
+  border-style: dotted;
+  border-radius: 5px;
+  border-color:rgb(50,180,220);
+  filter:grayscale(40%);
+  cursor:not-allowed;
+}
+
 /*--input - checkbox --*/
 
-input[class*=bright][type=checkbox]{
+input[class*=bright][type=checkbox]:not(:disabled) {
   cursor:pointer;
 }
-input[class*=bright][type=checkbox] + label {
+input[class*=bright][type=checkbox]:not(:disabled) + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -247,18 +379,18 @@ input[class*=bright][type=checkbox] + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=bright][type=checkbox]:hover, input[class*=bright][type=checkbox] + label:hover {
+input[class*=bright][type=checkbox]:not(:disabled):hover, input[class*=bright][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(205,255,255);
 }
-input[class*=bright][type=checkbox]:active, input[class*=bright][type=checkbox] + label:active{
+input[class*=bright][type=checkbox]:not(:disabled):active, input[class*=bright][type=checkbox] + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(180,235,255);
 }
-input[class*=bright][type=checkbox]:checked + label{
+input[class*=bright][type=checkbox]:not(:disabled):checked + label {
   background:rgb(200,250,250);
   color:rgb(40,140,240);
 }
-input[class*=bright][type=checkbox]:checked::before {
+input[class*=bright][type=checkbox]:checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -268,7 +400,7 @@ input[class*=bright][type=checkbox]:checked::before {
   background: rgb(220,255,255);
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=checkbox]:not(checked)::before {
+input[class*=bright][type=checkbox]:not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -278,7 +410,7 @@ input[class*=bright][type=checkbox]:not(checked)::before {
   border-radius: 3px;
   background: rgb(240,255,255);
 }
-input[class*=bright][type=checkbox]:not(checked)::after {
+input[class*=bright][type=checkbox]:not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -292,7 +424,7 @@ input[class*=bright][type=checkbox]:not(checked)::after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=checkbox]:checked::after {
+input[class*=bright][type=checkbox]:checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -307,10 +439,10 @@ input[class*=bright][type=checkbox]:checked::after {
 
 /*--*/
 
-input[class*=middle][type=checkbox]{
+input[class*=middle][type=checkbox]:not(:disabled) {
   cursor:pointer;
 }
-input[class*=middle][type=checkbox] + label {
+input[class*=middle][type=checkbox]:not(:disabled) + label {
   color:rgb(10,50,255);
   background:rgb(150,220,255);
   border-style:none;
@@ -318,18 +450,18 @@ input[class*=middle][type=checkbox] + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=middle][type=checkbox]:hover, input[class*=middle][type=checkbox] + label:hover {
+input[class*=middle][type=checkbox]:not(:disabled):hover, input[class*=middle][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(150,220,255);
 }
-input[class*=middle][type=checkbox]:active, input[class*=middle][type=checkbox] + label:active{
+input[class*=middle][type=checkbox]:not(:disabled):active, input[class*=middle][type=checkbox] + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(150,220,255);
 }
-input[class*=middle][type=checkbox]:checked + label{
+input[class*=middle][type=checkbox]:not(:disabled):checked + label {
   background:rgb(120,210,255);
   color:rgb(10,10,255);
 }
-input[class*=middle][type=checkbox]:checked::before {
+input[class*=middle][type=checkbox]:checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -339,7 +471,7 @@ input[class*=middle][type=checkbox]:checked::before {
   background: rgb(180,220,255);
   -webkit-transition: 0.35s;
 }
-input[class*=middle][type=checkbox]:not(checked)::before {
+input[class*=middle][type=checkbox]:not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -349,7 +481,7 @@ input[class*=middle][type=checkbox]:not(checked)::before {
   border-radius: 3px;
   background: rgb(200,240,255);
 }
-input[class*=middle][type=checkbox]:not(checked)::after {
+input[class*=middle][type=checkbox]:not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -363,7 +495,7 @@ input[class*=middle][type=checkbox]:not(checked)::after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=middle][type=checkbox]:checked::after {
+input[class*=middle][type=checkbox]:checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -381,7 +513,7 @@ input[class*=middle][type=checkbox]:checked::after {
 input[class*=dark][type=checkbox]{
   cursor:pointer;
 }
-input[class*=dark][type=checkbox] + label {
+input[class*=dark][type=checkbox]:not(:disabled) + label {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style:none;
@@ -389,18 +521,18 @@ input[class*=dark][type=checkbox] + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=dark][type=checkbox]:hover, input[class*=dark][type=checkbox] + label:hover {
+input[class*=dark][type=checkbox]:not(:disabled):hover, input[class*=dark][type=checkbox] + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(50,100,205);
 }
-input[class*=dark][type=checkbox]:active, input[class*=dark][type=checkbox] + label:active{
+input[class*=dark][type=checkbox]:not(:disabled):active, input[class*=dark][type=checkbox] + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(50,100,205);
 }
-input[class*=dark][type=checkbox]:checked + label{
+input[class*=dark][type=checkbox]:not(:disabled):checked + label {
   color: rgb(120,230,255);
   background: rgb(20,90,205);
 }
-input[class*=dark][type=checkbox]:checked::before {
+input[class*=dark][type=checkbox]:checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -410,7 +542,7 @@ input[class*=dark][type=checkbox]:checked::before {
   background: rgb(100,180,255);
   -webkit-transition: 0.35s;
 }
-input[class*=dark][type=checkbox]:not(checked)::before {
+input[class*=dark][type=checkbox]:not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -420,7 +552,7 @@ input[class*=dark][type=checkbox]:not(checked)::before {
   border-radius: 3px;
   background: rgb(160,200,255);
 }
-input[class*=dark][type=checkbox]:not(checked)::after {
+input[class*=dark][type=checkbox]:not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -434,7 +566,7 @@ input[class*=dark][type=checkbox]:not(checked)::after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=dark][type=checkbox]:checked::after {
+input[class*=dark][type=checkbox]:checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -447,8 +579,82 @@ input[class*=dark][type=checkbox]:checked::after {
 
 }
 
-/*--input - radio --*/
+/*--input - checkbox - disabled --*/
 
+input[class*=bright][type=checkbox]:disabled {
+  cursor:not-allowed;
+}
+input[class*=bright][type=checkbox]:disabled + label {
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+input[class*=bright][type=checkbox]:disabled::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(50,150,255);
+  border-radius: 3px;
+  background: rgb(240,255,255);
+  filter:grayscale(60%);
+}
+
+/*--*/
+
+input[class*=middle][type=checkbox]:disabled {
+  cursor:not-allowed;
+}
+input[class*=middle][type=checkbox]:disabled + label {
+  color:rgb(10,50,255);
+  background:rgb(150,220,255);
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+input[class*=middle][type=checkbox]:disabled::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(50,130,240);
+  border-radius: 3px;
+  background: rgb(200,240,255);
+  filter:grayscale(60%);
+}
+
+/*--*/
+
+input[class*=dark][type=checkbox]:disabled {
+  cursor:not-allowed;
+}
+input[class*=dark][type=checkbox]:disabled + label {
+  color: rgb(120,220,255);
+  background: rgb(50,100,205);
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+input[class*=dark][type=checkbox]:disabled::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(50,50,255);
+  border-radius: 3px;
+  background: rgb(160,200,255);
+  filter:grayscale(60%);
+}
+
+/*--input - radio --*/
 
 input[class*=bright][type=radio]{
   cursor:pointer;
