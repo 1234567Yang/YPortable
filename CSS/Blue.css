@@ -95,9 +95,9 @@ button[class*=dark]:disabled {
 
 /*--p--*/
 
-p[class*=dark] {
-  background:rgb(20,100,170);
-  color:rgb(100,200,255);
+p[class*=bright] {
+  color:rgb(50,200,255);
+  background:rgb(235,255,255);
   border-radius:10px;
 }
 /*--*/
@@ -107,10 +107,30 @@ p[class*=middle] {
   border-radius:10px;
 }
 /*--*/
-p[class*=bright] {
-  color:rgb(50,200,255);
-  background:rgb(235,255,255);
+p[class*=dark] {
+  background:rgb(20,100,170);
+  color:rgb(100,200,255);
   border-radius:10px;
+}
+
+/*--h1 - h6--*/
+
+[class*=bright]:is(h1, h2, h3, h4, h5, h6) {
+  background:rgb(220,255,255);
+  color:rgb(50,120,255);
+  border-radius:5px; 
+}
+/*--*/
+[class*=middle]:is(h1, h2, h3, h4, h5, h6) {
+  background:rgb(50,150,220);
+  color:rgb(205,255,255);
+  border-radius:5px;
+}
+/*--*/
+[class*=dark]:is(h1, h2, h3, h4, h5, h6) {
+  background:rgb(20,100,170);
+  color:rgb(100,200,255);
+  border-radius:5px;
 }
 
 /*--input - text - password - search - url - tel - email - color --*/
