@@ -113,9 +113,9 @@ p[class*=bright] {
   border-radius:10px;
 }
 
-/*--input - text - password - search - url - tel - email --*/
+/*--input - text - password - search - url - tel - email - color --*/
 
-input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
+input[class*=bright]:is([type=text],[type=color],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: solid;
@@ -942,4 +942,75 @@ input[class*=dark][type=radio]:disabled::before {
   border-radius: 25px;
   background: rgb(160,200,255);
   filter:grayscale(60%);
+}
+
+/*--table--*/
+
+table[class*=bright] {
+  background:rgb(250,255,255);
+  border-radius:5px;
+  border-color:rgb(50,150,255);
+}
+table[class*=bright] th{
+  color:rgb(20,100,255);
+  border-radius:5px;
+  border-color:rgb(50,150,255);
+}
+table[class*=bright] td{
+  color:rgb(30,120,255);
+  border-radius:5px;
+}
+table[class*=bright] tr{
+  background:rgb(220,255,255);
+   -webkit-transition-duration: 0.1s;
+}
+table[class*=bright] tr:hover{
+   background:rgb(180,250,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(200,250,255);
+}
+/*--*/
+table[class*=middle] {
+  background:rgb(160,250,255);
+  border-radius:5px;
+  border-color:rgb(50,10,255);
+}
+table[class*=middle] th{
+  color:rgb(10,50,255);
+  border-radius:5px;
+  border-color:rgb(50,150,255);
+}
+table[class*=middle] td{
+  color:rgb(50,10,255);
+  border-radius:5px;
+}
+table[class*=middle] tr{
+  background:rgb(150,220,255);
+   -webkit-transition-duration: 0.1s;
+}
+table[class*=middle] tr:hover{
+   background:rgb(100,200,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(100,200,255);
+}
+/*--*/
+table[class*=dark] {
+  background: rgb(100,200,205);
+  border-radius:5px;
+  border-color:rgb(50,10,255);
+}
+table[class*=dark] th{
+  color:rgb(100,230,255);
+  border-radius:5px;
+  border-color:rgb(50,150,255);
+}
+table[class*=dark] td{
+  color:rgb(120,220,255);
+  border-radius:5px;
+}
+table[class*=dark] tr{
+  background:rgb(50,100,205);
+   -webkit-transition-duration: 0.1s;
+}
+table[class*=dark] tr:hover{
+   background:rgb(10,50,210);
+  -webkit-box-shadow: 1px 1px 5px rgb(10,50,210);
 }
