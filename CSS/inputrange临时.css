@@ -1,0 +1,40 @@
+input[class="bright"][type="range"]:not(:disabled){
+  outline: none;
+  -webkit-appearance: none;
+  height: 5px;
+  background: rgb(50,150,255);
+  border-radius:5px;
+  cursor:pointer;
+}
+input[class="bright"][type="range"]:not(:disabled):active{
+  
+}
+
+@keyframes SlideTo
+{
+	from {opacity: 0;}
+	to {value:attr(value);}
+}
+input[class="bright"][type="range"]:not(:disabled) + label{
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  border-radius:5px;
+  display: inline-block;
+}
+input[class="bright"][type="range"]:not(:disabled)::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-box-shadow:0px 0px 5px 1px rgb(205,255,255);
+  width: 15px;
+  height:15px;
+  border-radius:10px;
+  background:rgb(205,255,255);
+  -webkit-transition-duration: 0.35s;
+}
+input[class="bright"][type="range"]:not(:disabled)::-webkit-slider-thumb:hover{
+  background:rgb(160,230,255);
+}
+input[class="bright"][type="range"]:not(:disabled)::-webkit-slider-thumb:active{
+  -webkit-box-shadow:0px 0px 6px 1px rgb(205,255,255);
+  background:rgb(120,230,255);
+}
+/*--*/
