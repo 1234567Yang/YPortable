@@ -8,15 +8,19 @@ abbr[class*=bright]{
 abbr[class*=bright]:hover::after{
   /*code from here: https://stackoverflow.com/questions/47695771/css-pseudo-element-tooltip-has-the-same-width-as-the-original-element*/
   color: rgb(50,200,255);
-  background: rgb(235,255,255);
-  content:attr(title);
+  background: rgba(235,255,255,0.8);
+  content:attr(hint);
   position:absolute;
   padding: 2px 5px;
   bottom: 0; right: 0;
-  transform: translate(100%, 100%);
-  
+  transform: translate(100%, 50%);
+  border-radius:2px;
+  width:500px;
+  height:20px;
+  font-size:20px;
+  overflow:hidden;
   opacity: 0;
-  -webkit-animation:FadeinABBR 0.1s;
+  -webkit-animation:FadeinABBR 0.5s;
   -webkit-animation-delay:0.5s;
   -webkit-animation-fill-mode: forwards;
 }
