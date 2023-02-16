@@ -1,0 +1,28 @@
+abbr[class*=bright]{
+  color: rgb(50,200,255);
+  background: rgb(235,255,255);
+  border-radius: 2px;
+  text-decoration: underline dotted rgb(30,150,230);
+  position:relative;
+}
+abbr[class*=bright]:hover::after{
+  /*code from here: https://stackoverflow.com/questions/47695771/css-pseudo-element-tooltip-has-the-same-width-as-the-original-element*/
+  color: rgb(50,200,255);
+  background: rgb(235,255,255);
+  content:attr(title);
+  position:absolute;
+  padding: 2px 5px;
+  bottom: 0; right: 0;
+  transform: translate(100%, 100%);
+  
+  opacity: 0;
+  -webkit-animation:FadeinABBR 0.1s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes FadeinABBR
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
