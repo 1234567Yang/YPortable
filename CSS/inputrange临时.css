@@ -5,15 +5,10 @@ input[class="bright"][type="range"]:not(:disabled){
   background: rgb(50,150,255);
   border-radius:5px;
   cursor:pointer;
+  -webkit-transition-duration: 0.35s;
 }
 input[class="bright"][type="range"]:not(:disabled):active{
-  
-}
-
-@keyframes SlideTo
-{
-	from {opacity: 0;}
-	to {value:attr(value);}
+  background: rgb(50,130,255);
 }
 input[class="bright"][type="range"]:not(:disabled) + label{
   color:rgb(50,150,255);
