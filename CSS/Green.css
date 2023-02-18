@@ -1393,3 +1393,95 @@ table[class*=dark] tr:hover{
    background:rgb(10,210,50);
   -webkit-box-shadow: 1px 1px 5px rgb(10,210,50);
 }
+
+
+/*-- abbr --*/
+
+abbr[class*=bright]{
+  color: rgb(50,255,200);
+  background: rgb(235,255,255);
+  border-radius: 2px;
+  text-decoration: underline dotted rgb(30,230,150);
+  position:relative;
+}
+abbr[class*=bright]:hover::after{
+  /*code from here: https://stackoverflow.com/questions/47695771/css-pseudo-element-tooltip-has-the-same-width-as-the-original-element*/
+  color: rgb(50,255,200);
+  background: rgba(235,255,255,0.8);
+  content:attr(hint);
+  position:absolute;
+  padding: 2px 5px;
+  bottom: 0; right: 0;
+  transform: translate(100%, 50%);
+  border-radius:2px;
+  width:500px;
+  height:20px;
+  font-size:20px;
+  overflow:hidden;
+  opacity: 0;
+  -webkit-animation:FadeinABBR 0.5s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/*--*/
+
+abbr[class*=middle]{
+  background:rgb(50,220,150);
+  color:rgb(205,255,255);
+  border-radius: 2px;
+  text-decoration: underline dotted rgb(30,230,150);
+  position:relative;
+}
+abbr[class*=middle]:hover::after{
+  background:rgb(50,220,150);
+  color:rgb(205,255,255);
+  content:attr(hint);
+  position:absolute;
+  padding: 2px 5px;
+  bottom: 0; right: 0;
+  transform: translate(100%, 50%);
+  border-radius:2px;
+  width:500px;
+  height:20px;
+  font-size:20px;
+  overflow:hidden;
+  opacity: 0;
+  -webkit-animation:FadeinABBR 0.5s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/*--*/
+
+abbr[class*=dark]{
+  background:rgb(20,170,100);
+  color:rgb(100,255,200);
+  border-radius: 2px;
+  text-decoration: underline dotted rgb(30,230,150);
+  position:relative;
+}
+abbr[class*=dark]:hover::after{
+  background:rgb(20,170,100);
+  color:rgb(100,255,200);
+  content:attr(hint);
+  position:absolute;
+  padding: 2px 5px;
+  bottom: 0; right: 0;
+  transform: translate(100%, 50%);
+  border-radius:2px;
+  width:500px;
+  height:20px;
+  font-size:20px;
+  overflow:hidden;
+  opacity: 0;
+  -webkit-animation:FadeinABBR 0.5s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes FadeinABBR
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
