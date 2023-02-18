@@ -1347,7 +1347,9 @@ table[class*=bright] tr:hover{
    background:rgb(180,250,255);
   -webkit-box-shadow: 1px 1px 5px rgb(200,250,255);
 }
+
 /*--*/
+
 table[class*=middle] {
   background:rgb(160,250,255);
   border-radius:5px;
@@ -1370,7 +1372,9 @@ table[class*=middle] tr:hover{
    background:rgb(100,200,255);
   -webkit-box-shadow: 1px 1px 5px rgb(100,200,255);
 }
+
 /*--*/
+
 table[class*=dark] {
   background: rgb(100,200,205);
   border-radius:5px;
@@ -1392,4 +1396,95 @@ table[class*=dark] tr{
 table[class*=dark] tr:hover{
    background:rgb(10,50,210);
   -webkit-box-shadow: 1px 1px 5px rgb(10,50,210);
+}
+
+/*-- abbr --*/
+
+abbr[class*=bright]{
+  color: rgb(50,200,255);
+  background: rgb(235,255,255);
+  border-radius: 2px;
+  text-decoration: underline dotted rgb(30,150,230);
+  position:relative;
+}
+abbr[class*=bright]:hover::after{
+  /*code from here: https://stackoverflow.com/questions/47695771/css-pseudo-element-tooltip-has-the-same-width-as-the-original-element*/
+  color: rgb(50,200,255);
+  background: rgba(235,255,255,0.8);
+  content:attr(hint);
+  position:absolute;
+  padding: 2px 5px;
+  bottom: 0; right: 0;
+  transform: translate(100%, 50%);
+  border-radius:2px;
+  width:500px;
+  height:20px;
+  font-size:20px;
+  overflow:hidden;
+  opacity: 0;
+  -webkit-animation:FadeinABBR 0.5s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/*--*/
+
+abbr[class*=middle]{
+  background:rgb(50,150,220);
+  color:rgb(205,255,255);
+  border-radius: 2px;
+  text-decoration: underline dotted rgb(30,150,230);
+  position:relative;
+}
+abbr[class*=middle]:hover::after{
+  background:rgb(50,150,220);
+  color:rgb(205,255,255);
+  content:attr(hint);
+  position:absolute;
+  padding: 2px 5px;
+  bottom: 0; right: 0;
+  transform: translate(100%, 50%);
+  border-radius:2px;
+  width:500px;
+  height:20px;
+  font-size:20px;
+  overflow:hidden;
+  opacity: 0;
+  -webkit-animation:FadeinABBR 0.5s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/*--*/
+
+abbr[class*=dark]{
+  background:rgb(20,100,170);
+  color:rgb(100,200,255);
+  border-radius: 2px;
+  text-decoration: underline dotted rgb(30,150,230);
+  position:relative;
+}
+abbr[class*=dark]:hover::after{
+  background:rgb(20,100,170);
+  color:rgb(100,200,255);
+  content:attr(hint);
+  position:absolute;
+  padding: 2px 5px;
+  bottom: 0; right: 0;
+  transform: translate(100%, 50%);
+  border-radius:2px;
+  width:500px;
+  height:20px;
+  font-size:20px;
+  overflow:hidden;
+  opacity: 0;
+  -webkit-animation:FadeinABBR 0.5s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes FadeinABBR
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
