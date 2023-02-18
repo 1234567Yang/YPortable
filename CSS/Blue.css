@@ -584,7 +584,7 @@ input[class*=dark][type=checkbox]:not(:disabled) + label {
 input[class*=dark][type=checkbox]:not(:disabled):hover, input[class*=dark][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(50,100,205);
 }
-input[class*=dark][type=checkbox]:not(:disabled):active, input[class*=dark][type=checkbox] + label:active {
+input[class*=dark][type=checkbox]:not(:disabled):active, input[class*=dark][type=checkbox]:not(:disabled) + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(50,100,205);
 }
