@@ -726,7 +726,8 @@ input[class*=bright][class*=switch]:not(:disabled) + label {
   border-radius: 5px;
 }
 input[class*=bright][class*=switch]:not(:disabled)::before{
-  content: "";
+  content: "\00A0on";
+  color:rgb(50,200,255);
   display: block;
   position: relative;
   width: 50px;
@@ -735,12 +736,11 @@ input[class*=bright][class*=switch]:not(:disabled)::before{
   border-radius: 10px;
   background: rgb(240,255,255);
   -webkit-transform: translate(0px,-2px) !important;
-  -webkit-animation:SwitchNotCheckedBackBright 0.35s;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-transition-duration: 0.35s;
 }
 input[class*=bright][class*=switch]:checked:not(:disabled)::before{
-  -webkit-animation:SwitchCheckedBackBright 0.35s;
-  -webkit-animation-fill-mode: forwards;
+  border-color:rgb(50,150,255);
+  background: rgb(220,255,255);
 }
 input[class*=bright][class*=switch]:not(:disabled)::after{
   content: "";
@@ -751,56 +751,12 @@ input[class*=bright][class*=switch]:not(:disabled)::after{
   height:17px;
   border-radius:10px;
   -webkit-transform: translate(0px,-20px) !important;
-  -webkit-animation:SwitchNotCheckedBright 0.35s;
-  -webkit-animation-fill-mode: forwards;
   -webkit-transition-duration: 0.35s;
 }
 input[class*=bright][class*=switch]:not(:disabled):checked::after{
-  -webkit-animation:SwitchCheckedBright 0.35s;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-transform: translate(23px,-20px) !important;
+  background: rgb(50,150,255);
   -webkit-box-shadow: 1px 1px 5px rgb(30,150,255);
-}
-@keyframes SwitchCheckedBright
-{
-	from {
-      left:1;
-      background: rgb(50,200,255);
-  }
-	to {
-      left:23;
-      background: rgb(50,150,255);
-  }
-}
-@keyframes SwitchNotCheckedBright
-{
-	from {
-      left:23;
-      background: rgb(50,150,255);
-  }
-	to {
-      left:1;
-      background: rgb(50,200,255);
-  }
-}
-@keyframes SwitchCheckedBackBright{
-  from{
-    border-color:rgb(50,200,255);
-    background: rgb(240,255,255);
-  }
-  to{
-    border-color:rgb(50,150,255);
-    background: rgb(220,255,255);
-  }
-}
-@keyframes SwitchNotCheckedBackBright{
-  from{
-    border-color:rgb(50,150,255);
-    background: rgb(220,255,255);
-  }
-  to{
-    border-color:rgb(50,200,255);
-    background: rgb(240,255,255);
-  }
 }
 
 /*--*/
@@ -815,21 +771,21 @@ input[class*=middle][class*=switch]:not(:disabled) + label {
   border-radius: 5px;
 }
 input[class*=middle][class*=switch]:not(:disabled)::before{
-  content: "";
+  content: "\00A0on";
+  color:rgb(20,130,255);
   display: block;
   position: relative;
   width: 50px;
   height: 15px;
-  border: 2px solid rgb(0,155,255);
+  -webkit-transform: translate(0px,-2px) !important;
+  border: 2px solid rgb(20,130,255);
   border-radius: 10px;
   background: rgb(205,255,255);
-  -webkit-transform: translate(0px,-2px) !important;
-  -webkit-animation:SwitchNotCheckedBackMiddle 0.35s;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-transition-duration: 0.35s;
 }
 input[class*=middle][class*=switch]:checked:not(:disabled)::before{
-  -webkit-animation:SwitchCheckedBackMiddle 0.35s;
-  -webkit-animation-fill-mode: forwards;
+  border-color:rgb(0,80,255);
+  background:rgb(205,230,255);
 }
 input[class*=middle][class*=switch]:not(:disabled)::after{
   content: "";
@@ -840,56 +796,12 @@ input[class*=middle][class*=switch]:not(:disabled)::after{
   height:17px;
   border-radius:10px;
   -webkit-transform: translate(0px,-20px) !important;
-  -webkit-animation:SwitchNotCheckedMiddle 0.35s;
-  -webkit-animation-fill-mode: forwards;
   -webkit-transition-duration: 0.35s;
 }
 input[class*=middle][class*=switch]:not(:disabled):checked::after{
-  -webkit-animation:SwitchCheckedMiddle 0.35s;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-transform: translate(23px,-20px) !important;
+  background:rgb(0,80,255);
   -webkit-box-shadow: 1px 1px 5px rgb(10,100,255);
-}
-@keyframes SwitchCheckedMiddle
-{
-	from {
-      left:1;
-      background:rgb(20,130,255);
-  }
-	to {
-      left:23;
-      background:rgb(0,80,255);
-  }
-}
-@keyframes SwitchNotCheckedMiddle
-{
-	from {
-      left:23;
-      background:rgb(0,80,255);
-  }
-	to {
-      left:1;
-      background:rgb(20,130,255);
-  }
-}
-@keyframes SwitchCheckedBackMiddle{
-  from{
-    border-color:rgb(0,155,255);
-    background:rgb(205,255,255);
-  }
-  to{
-    border-color:rgb(0,135,255);
-    background:rgb(205,230,255);
-  }
-}
-@keyframes SwitchNotCheckedBackMiddle{
-  from{
-    border-color:rgb(0,135,255);
-    background:rgb(205,230,255);
-  }
-  to{
-    border-color:rgb(0,155,255);
-    background:rgb(205,255,255);
-  }
 }
 
 /*--*/
@@ -904,7 +816,8 @@ input[class*=dark][class*=switch]:not(:disabled) + label {
   border-radius: 5px;
 }
 input[class*=dark][class*=switch]:not(:disabled)::before{
-  content: "";
+  content: "\00A0on";
+  color:rgb(0,80,150);
   display: block;
   position: relative;
   width: 50px;
@@ -913,72 +826,27 @@ input[class*=dark][class*=switch]:not(:disabled)::before{
   border-radius: 10px;
   background: rgb(0,155,255);
   -webkit-transform: translate(0px,-2px) !important;
-  -webkit-animation:SwitchNotCheckedBackDark 0.35s;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-transition-duration: 0.35s;
 }
 input[class*=dark][class*=switch]:not(:disabled):checked::before{
-  -webkit-animation:SwitchCheckedBackDark 0.35s;
-  -webkit-animation-fill-mode: forwards;
+  border-color:rgb(0,20,100);
+  background:rgb(20,150,255);
 }
 input[class*=dark][class*=switch]:not(:disabled)::after{
   content: "";
   display: block;
   position: relative;
-  background: rgb(100,200,255);
+  background: rgb(0,80,150);
   width:30px;
   height:17px;
   border-radius:10px;
   -webkit-transform: translate(0px,-20px) !important;
-  -webkit-animation:SwitchNotCheckedDark 0.35s;
-  -webkit-animation-fill-mode: forwards;
   -webkit-transition-duration: 0.35s;
 }
 input[class*=dark][class*=switch]:not(:disabled):checked::after{
-  -webkit-animation:SwitchCheckedDark 0.35s;
-  -webkit-animation-fill-mode: forwards;
   -webkit-box-shadow: 1px 1px 5px rgb(0,80,150);
-}
-@keyframes SwitchCheckedDark
-{
-	from {
-      left:1;
-      background:rgb(0,80,150);
-  }
-	to {
-      left:23;
-      background:rgb(0,20,100);
-  }
-}
-@keyframes SwitchNotCheckedDark
-{
-	from {
-      left:23;
-      background:rgb(0,20,100);
-  }
-	to {
-      left:1;
-      background:rgb(0,80,150);
-  }
-}
-@keyframes SwitchCheckedBackDark{
-  from{
-    border-color:rgb(0,80,150);
-    background:rgb(100,200,255);
-  }
-  to{
-    border-color:rgb(0,20,100);
-    background:rgb(20,150,255);
-  }
-}
-@keyframes SwitchNotCheckedBackDark{
-  from{
-    border-color:rgb(0,20,100);
-    background:rgb(20,150,255);
-  }
-  to{
-    border-color:rgb(0,20,100);
-    background:rgb(100,200,255);
-  }
+  -webkit-transform: translate(23px,-20px) !important;
+  background:rgb(0,20,100);
 }
 
 /*--input - radio --*/
