@@ -4,7 +4,7 @@
 }
 
 /*--button--*/
-button[class*=bright]:not(:disabled) {
+[class*=bright]:is(button, input[type=submit]):not(:disabled) {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -14,17 +14,17 @@ button[class*=bright]:not(:disabled) {
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-button[class*=bright]:hover:not(:disabled) {
+[class*=bright]:is(button, input[type=submit]):hover:not(:disabled) {
   color:rgb(20,120,230);
   background:rgb(160,230,255);
 }
-button[class*=bright]:active:not(:disabled){
+[class*=bright]:is(button, input[type=submit]):active:not(:disabled){
   -webkit-transition-duration: 0.1s;
   color:rgb(10,60,255);
   background:rgb(120,230,255);
 }
 /*--*/
-button[class*=middle]:not(:disabled) {
+[class*=middle]:is(button, input[type=submit]):not(:disabled) {
   background:rgb(0,155,255);
   color:rgb(205,255,255);
   border-style:none;
@@ -34,17 +34,17 @@ button[class*=middle]:not(:disabled) {
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-button[class*=middle]:hover:not(:disabled) {
+[class*=middle]:is(button, input[type=submit]):hover:not(:disabled) {
   background:rgb(0,120,220);
   color:rgb(190,230,255);
 }
-button[class*=middle]:active:not(:disabled){
+[class*=middle]:is(button, input[type=submit]):active:not(:disabled){
   -webkit-transition-duration: 0.1s;
   background:rgb(0,100,220);
   color:rgb(120,230,255);
 }
 /*--*/
-button[class*=dark]:not(:disabled) {
+[class*=dark]:is(button, input[type=submit]):not(:disabled) {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
   border-style:none;
@@ -54,11 +54,11 @@ button[class*=dark]:not(:disabled) {
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-button[class*=dark]:hover:not(:disabled) {
+[class*=dark]:is(button, input[type=submit]):hover:not(:disabled) {
   background:rgb(0,50,120);
   color:rgb(0,130,220);
 }
-button[class*=dark]:active:not(:disabled){
+[class*=dark]:is(button, input[type=submit]):active:not(:disabled){
   -webkit-transition-duration: 0.1s;
   background:rgb(0,20,100);
   color:rgb(0,100,200);
@@ -66,7 +66,7 @@ button[class*=dark]:active:not(:disabled){
 
 /*-- button - disabled --*/
 
-button[class*=bright]:disabled {
+[class*=bright]:is(button, input[type=submit]):disabled {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -75,7 +75,7 @@ button[class*=bright]:disabled {
   filter:grayscale(60%);
 }
 /*--*/
-button[class*=middle]:disabled {
+[class*=middle]:is(button, input[type=submit]):disabled {
   background:rgb(0,155,255);
   color:rgb(205,255,255);
   border-style:none;
@@ -84,7 +84,7 @@ button[class*=middle]:disabled {
   filter:grayscale(60%);
 }
 /*--*/
-button[class*=dark]:disabled {
+[class*=dark]:is(button, input[type=submit]):disabled {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
   border-style:none;
