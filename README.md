@@ -21,7 +21,7 @@ It is suitable for beginners to learn CSS, as well as for beginners to build web
 <br>
 This is also a program that help myself learn CSS, and I am a rookie and I have poor aesthetic ability. In this case, this repository may be not brilliant, but useful.
 
-<video src="https://github.com/1234567Yang/YPortable/blob/main/images/ViewEX.mp4"></video>
+https://github.com/1234567Yang/YPortable/blob/main/images/ViewEX.mp4
 
 ## QuickStart
 
