@@ -849,6 +849,119 @@ input[class*=dark][class*=switch]:not(:disabled):checked::after{
   background:rgb(0,20,100);
 }
 
+/*-- input - checkbox - switch - disabled --*/
+
+input[class*=bright][class*=switch]:disabled{
+  width: 50px;
+  cursor:not-allowed;
+}
+input[class*=bright][class*=switch]:disabled + label {
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  border-radius: 5px;
+  filter:grayscale(60%);
+}
+input[class*=bright][class*=switch]:disabled::before{
+  content: "";
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 15px;
+  border: 2px solid rgb(50,200,255);
+  border-radius: 10px;
+  background: rgb(240,255,255);
+  -webkit-transform: translate(0px,-2px) !important;
+  filter:grayscale(60%);
+}
+input[class*=bright][class*=switch]:disabled::after{
+  content: "";
+  display: block;
+  position: relative;
+  background: rgb(50,200,255);
+  width:30px;
+  height:17px;
+  border-radius:10px;
+  -webkit-transform: translate(0px,-20px) !important;
+  filter:grayscale(60%);
+}
+input[class*=bright][class*=switch]:disabled:checked::after{
+  -webkit-transform: translate(23px,-20px) !important;
+  background: rgb(50,150,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(30,150,255);
+}
+
+/*--*/
+
+input[class*=middle][class*=switch]:disabled{
+  cursor:not-allowed;
+  width: 50px;
+}
+input[class*=middle][class*=switch]:disabled + label {
+  background:rgb(0,155,255);
+  color:rgb(205,255,255);
+  border-radius: 5px;
+  filter:grayscale(60%);
+}
+input[class*=middle][class*=switch]:disabled::before{
+  content: "";
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 15px;
+  -webkit-transform: translate(0px,-2px) !important;
+  border: 2px solid rgb(20,130,255);
+  border-radius: 10px;
+  background: rgb(205,255,255);
+  filter:grayscale(60%);
+}
+input[class*=middle][class*=switch]:disabled::after{
+  content: "";
+  display: block;
+  position: relative;
+  background: rgb(20,130,255);
+  width:30px;
+  height:17px;
+  border-radius:10px;
+  -webkit-transform: translate(0px,-20px) !important;
+  filter:grayscale(60%);
+}
+
+/*--*/
+
+input[class*=dark][class*=switch]:disabled{
+  cursor:not-allowed;
+  width: 50px;
+}
+input[class*=dark][class*=switch]:disabled + label {
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+  border-radius: 5px;
+  filter:grayscale(60%);
+}
+input[class*=dark][class*=switch]:disabled::before{
+  content: "";
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 15px;
+  border: 2px solid rgb(0,80,150);
+  border-radius: 10px;
+  background: rgb(0,155,255);
+  -webkit-transform: translate(0px,-2px) !important;
+  filter:grayscale(60%);
+}
+input[class*=dark][class*=switch]:disabled::after{
+  content: "";
+  display: block;
+  position: relative;
+  background: rgb(0,80,150);
+  width:30px;
+  height:17px;
+  border-radius:10px;
+  -webkit-transform: translate(0px,-20px) !important;
+  filter:grayscale(60%);
+}
+
 /*--input - radio --*/
 
 input[class*=bright][type=radio]:not(:disabled){
