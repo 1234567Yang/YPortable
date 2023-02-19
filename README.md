@@ -7,12 +7,12 @@ A lightweight, concise, and easy-to-use CSS Web UI framework. It is suitable for
 This is just a program that help myself learn CSS.
 
 ## Guide
-- [Quick start](#Quick start)
+- [Quick start](#Quickstart)
 - [Distinguishing feature](#Distinguishing feature)
 - [Supported Browsers](#Supported Browsers)
 - [Contribution](#Contribution)
 
-## Quick start
+## Quickstart
 
 - Download the files or just linking files on Github.
 - Choose a style you want.
