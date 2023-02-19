@@ -718,7 +718,8 @@ input[class*=dark][type=checkbox]:disabled::before {
 
 input[class*=bright][class*=switch]:not(:disabled){
   width: 50px;
-  -webkit-transition: 0.35s;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
 }
 input[class*=bright][class*=switch]:not(:disabled) + label {
   color:rgb(50,150,255);
@@ -763,7 +764,8 @@ input[class*=bright][class*=switch]:not(:disabled):checked::after{
 
 input[class*=middle][class*=switch]:not(:disabled){
   width: 50px;
-  -webkit-transition: 0.35s;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
 }
 input[class*=middle][class*=switch]:not(:disabled) + label {
   background:rgb(0,155,255);
@@ -808,7 +810,8 @@ input[class*=middle][class*=switch]:not(:disabled):checked::after{
 
 input[class*=dark][class*=switch]:not(:disabled){
   width: 50px;
-  -webkit-transition: 0.35s;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
 }
 input[class*=dark][class*=switch]:not(:disabled) + label {
   background:rgb(0,80,150);
