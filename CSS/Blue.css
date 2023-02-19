@@ -428,10 +428,10 @@ input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=dat
 
 /*--input - checkbox --*/
 
-input[class*=bright][type=checkbox]:not(:disabled) {
+input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled) {
   cursor:pointer;
 }
-input[class*=bright][type=checkbox]:not(:disabled) + label {
+input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled) + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -439,18 +439,18 @@ input[class*=bright][type=checkbox]:not(:disabled) + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=bright][type=checkbox]:not(:disabled):hover, input[class*=bright][type=checkbox]:not(:disabled) + label:hover {
+input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class*=bright][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(205,255,255);
 }
-input[class*=bright][type=checkbox]:not(:disabled):active, input[class*=bright][type=checkbox] + label:active {
+input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class*=bright][type=checkbox] + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(180,235,255);
 }
-input[class*=bright][type=checkbox]:not(:disabled):checked + label {
+input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
   background:rgb(200,250,250);
   color:rgb(40,140,240);
 }
-input[class*=bright][type=checkbox]:checked:not(:disabled)::before {
+input[class*=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -460,7 +460,7 @@ input[class*=bright][type=checkbox]:checked:not(:disabled)::before {
   background: rgb(220,255,255);
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=checkbox]:not(checked):not(:disabled)::before {
+input[class*=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -470,7 +470,7 @@ input[class*=bright][type=checkbox]:not(checked):not(:disabled)::before {
   border-radius: 3px;
   background: rgb(240,255,255);
 }
-input[class*=bright][type=checkbox]:not(checked):not(:disabled)::after {
+input[class*=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -484,7 +484,7 @@ input[class*=bright][type=checkbox]:not(checked):not(:disabled)::after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=checkbox]:checked:not(:disabled)::after {
+input[class*=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -499,10 +499,10 @@ input[class*=bright][type=checkbox]:checked:not(:disabled)::after {
 
 /*--*/
 
-input[class*=middle][type=checkbox]:not(:disabled) {
+input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled) {
   cursor:pointer;
 }
-input[class*=middle][type=checkbox]:not(:disabled) + label {
+input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled) + label {
   color:rgb(10,50,255);
   background:rgb(150,220,255);
   border-style:none;
@@ -510,18 +510,18 @@ input[class*=middle][type=checkbox]:not(:disabled) + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=middle][type=checkbox]:not(:disabled):hover, input[class*=middle][type=checkbox]:not(:disabled) + label:hover {
+input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class*=middle][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(150,220,255);
 }
-input[class*=middle][type=checkbox]:not(:disabled):active, input[class*=middle][type=checkbox] + label:active {
+input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class*=middle][type=checkbox] + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(150,220,255);
 }
-input[class*=middle][type=checkbox]:not(:disabled):checked + label {
+input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
   background:rgb(120,210,255);
   color:rgb(10,10,255);
 }
-input[class*=middle][type=checkbox]:checked:not(:disabled)::before {
+input[class*=middle][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -531,7 +531,7 @@ input[class*=middle][type=checkbox]:checked:not(:disabled)::before {
   background: rgb(180,220,255);
   -webkit-transition: 0.35s;
 }
-input[class*=middle][type=checkbox]:not(checked):not(:disabled)::before {
+input[class*=middle][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -541,7 +541,7 @@ input[class*=middle][type=checkbox]:not(checked):not(:disabled)::before {
   border-radius: 3px;
   background: rgb(200,240,255);
 }
-input[class*=middle][type=checkbox]:not(checked):not(:disabled)::after {
+input[class*=middle][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -555,7 +555,7 @@ input[class*=middle][type=checkbox]:not(checked):not(:disabled)::after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=middle][type=checkbox]:checked:not(:disabled)::after {
+input[class*=middle][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -570,10 +570,10 @@ input[class*=middle][type=checkbox]:checked:not(:disabled)::after {
 
 /*--*/
 
-input[class*=dark][type=checkbox]{
+input[class*=dark][type=checkbox]:not([class*=switch]){
   cursor:pointer;
 }
-input[class*=dark][type=checkbox]:not(:disabled) + label {
+input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled) + label {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style:none;
@@ -581,18 +581,18 @@ input[class*=dark][type=checkbox]:not(:disabled) + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=dark][type=checkbox]:not(:disabled):hover, input[class*=dark][type=checkbox]:not(:disabled) + label:hover {
+input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class*=dark][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(50,100,205);
 }
-input[class*=dark][type=checkbox]:not(:disabled):active, input[class*=dark][type=checkbox]:not(:disabled) + label:active {
+input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class*=dark][type=checkbox]:not(:disabled) + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(50,100,205);
 }
-input[class*=dark][type=checkbox]:not(:disabled):checked + label {
+input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
   color: rgb(120,230,255);
   background: rgb(20,90,205);
 }
-input[class*=dark][type=checkbox]:checked:not(:disabled)::before {
+input[class*=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -602,7 +602,7 @@ input[class*=dark][type=checkbox]:checked:not(:disabled)::before {
   background: rgb(100,180,255);
   -webkit-transition: 0.35s;
 }
-input[class*=dark][type=checkbox]:not(checked):not(:disabled)::before {
+input[class*=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -612,7 +612,7 @@ input[class*=dark][type=checkbox]:not(checked):not(:disabled)::before {
   border-radius: 3px;
   background: rgb(160,200,255);
 }
-input[class*=dark][type=checkbox]:not(checked):not(:disabled)::after {
+input[class*=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -626,7 +626,7 @@ input[class*=dark][type=checkbox]:not(checked):not(:disabled)::after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=dark][type=checkbox]:checked:not(:disabled)::after {
+input[class*=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -641,10 +641,10 @@ input[class*=dark][type=checkbox]:checked:not(:disabled)::after {
 
 /*--input - checkbox - disabled --*/
 
-input[class*=bright][type=checkbox]:disabled {
+input[class*=bright][type=checkbox]:not([class*=switch]):disabled {
   cursor:not-allowed;
 }
-input[class*=bright][type=checkbox]:disabled + label {
+input[class*=bright][type=checkbox]:not([class*=switch]):disabled + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -652,7 +652,7 @@ input[class*=bright][type=checkbox]:disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=bright][type=checkbox]:disabled::before {
+input[class*=bright][type=checkbox]:not([class*=switch]):disabled::before {
   content: "";
   display: block;
   position: relative;
@@ -666,10 +666,10 @@ input[class*=bright][type=checkbox]:disabled::before {
 
 /*--*/
 
-input[class*=middle][type=checkbox]:disabled {
+input[class*=middle][type=checkbox]:not([class*=switch]):disabled {
   cursor:not-allowed;
 }
-input[class*=middle][type=checkbox]:disabled + label {
+input[class*=middle][type=checkbox]:not([class*=switch]):disabled + label {
   color:rgb(10,50,255);
   background:rgb(150,220,255);
   border-style:none;
@@ -677,7 +677,7 @@ input[class*=middle][type=checkbox]:disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=middle][type=checkbox]:disabled::before {
+input[class*=middle][type=checkbox]:not([class*=switch]):disabled::before {
   content: "";
   display: block;
   position: relative;
@@ -691,10 +691,10 @@ input[class*=middle][type=checkbox]:disabled::before {
 
 /*--*/
 
-input[class*=dark][type=checkbox]:disabled {
+input[class*=dark][type=checkbox]:not([class*=switch]):disabled {
   cursor:not-allowed;
 }
-input[class*=dark][type=checkbox]:disabled + label {
+input[class*=dark][type=checkbox]:not([class*=switch]):disabled + label {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style:none;
@@ -702,7 +702,7 @@ input[class*=dark][type=checkbox]:disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=dark][type=checkbox]:disabled::before {
+input[class*=dark][type=checkbox]:not([class*=switch]):disabled::before {
   content: "";
   display: block;
   position: relative;
