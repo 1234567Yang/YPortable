@@ -7,24 +7,23 @@ A lightweight, concise, and easy-to-use CSS Web UI framework. It is suitable for
 This is just a program that help myself learn CSS.
 
 ## Guide
-- [Quick start](#Quickstart)
-- [Distinguishing feature](#Distinguishing feature)
-- [Supported Browsers](#Supported Browsers)
+- [Quick start](#QuickStart)
+- [Distinguishing feature](#DistinguishingFeature)
+- [Supported Browsers](#SupportedBrowsers)
 - [Contribution](#Contribution)
 
-## Quick start
-### Quickstart
+## QuickStart
 
 - Download the files or just linking files on Github.
 - Choose a style you want.
 - Adding class="bright/middle/dark" to change the darkness.
 
-## Distinguishing feature
+## DistinguishingFeature
 
 - Easy to use
 - Can change into a completely different style easily
 
-## Supported Browsers
+## SupportedBrowsers
 
 ```diff
 + support completely
