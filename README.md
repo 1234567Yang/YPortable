@@ -12,7 +12,8 @@ This is just a program that help myself learn CSS.
 - [Supported Browsers](#Supported Browsers)
 - [Contribution](#Contribution)
 
-## Quickstart
+## Quick start
+### Quickstart
 
 - Download the files or just linking files on Github.
 - Choose a style you want.
