@@ -4,7 +4,7 @@
   </p>
 
 <p align="center">
-A light-weight, concise, and easy-to-use CSS Web UI framework for beginners.
+A lightweight, concise, and easy-to-use CSS Web UI framework for beginners.
 </p>
 
 
