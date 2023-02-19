@@ -6,6 +6,12 @@ A lightweight, concise, and easy-to-use CSS Web UI framework. It is suitable for
 <br>
 This is just a program that help myself learn CSS.
 
+## Guide
+- [Quick start](#Quick start)
+- [Distinguishing feature](#Distinguishing feature)
+- [Supported Browsers](#Supported Browsers)
+- [Contribution](#Contribution)
+
 ## Quick start
 
 - Download the files or just linking files on Github.
@@ -36,7 +42,6 @@ This is just a program that help myself learn CSS.
 ```
 
 ## Contribution
-
-Please just create a Pull requests to contribute.
+Thanks for those who contributed this repositories.
 <br>
-Any contribution is acceptable if there are no problems.
+If you want to contribute, please just create a Pull requests to contribute and **any** contribution is acceptable if there are no problems.
