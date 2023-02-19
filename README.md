@@ -41,6 +41,7 @@ This is also a program that help myself learn CSS, and I am a rookie and I have 
 <button class="bright" >test</button>
 <input class="bright" type="text" placeholder="test">
 <input type="checkbox" id="inputCD1" class="bright" disabled><label for="inputCD1">test</label>
+<input type="checkbox" id="inputSC1" class="bright switch"><label for="inputSC1">test</label>
 ```
 
 ## DistinguishingFeature:
