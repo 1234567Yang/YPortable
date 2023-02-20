@@ -11,14 +11,15 @@ A lightweight, concise, and easy-to-use CSS Web UI framework for beginners.
 
 
 
-## Guide Table
+## Guide Table:
+
 - [Quick start](#QuickStart)
 - [Introduction](#Introduction)
 - [Distinguishing feature](#DistinguishingFeature)
 - [Supported Browsers](#SupportedBrowsers)
 - [Contribution](#Contribution)
 
-## QuickStart
+## QuickStart:
 
 - Download the files or just linking files on Github.
 - Choose a style you want.
@@ -70,7 +71,7 @@ This is also a program that help myself learn CSS, I am both a rookie and a poor
 - Can change into a completely different style easily
 - Beginner friendly
 
-## SupportedBrowsers
+## SupportedBrowsers:
 
 ### Explanation:
 ```diff
