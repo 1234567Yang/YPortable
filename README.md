@@ -95,4 +95,5 @@ Thanks for those who contributed this repository.
 <br>
 Contribute requirement:
 - If you add a new kind of element, please provide bright/middle/dark version of that element, and formarting as other element by using ```/*--*/```
-- If you want to contribute, please just create a Pull requests to contribute and **any** contribution is acceptable if there are no problems.
+- Please only contribute on YPortable.blue.css, because other files will be transformed by program.
+- Just create a Pull requests to contribute and **any** contribution is acceptable if there are no problems.
