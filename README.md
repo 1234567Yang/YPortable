@@ -81,11 +81,11 @@ This is also a program that help myself learn CSS, I am both a rookie and a poor
 
 ### Test Result:
 ```diff
-+ Microsoft Edge test on version 110.0.01587.49
++ Microsoft Edge test on 110.0.01587.49
 + Chrome test on 110.0.5481.104
 + Opera test on 95.0.4635.46
 ! Firefox test on version 109.0.8412
-! Internet Explorer test on version 11.0.22621.1
+! Internet Explorer test on 11.0.22621.1
 # Safari
 ```
 
