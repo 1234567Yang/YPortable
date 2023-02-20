@@ -50,9 +50,7 @@ A lightweight, concise, and easy-to-use CSS Web UI framework for beginners.
 <input type="checkbox" id="inputSC1" class="bright switch"><label for="inputSC1">YPortable</label>
 <br><br>
 
-<button class="bright bigSize selfFit">
-  YPortable
-</button>
+<button class="dark bigSize selfFit">YPortable</button>
 ```
 
 ## Introduction:
