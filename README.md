@@ -1,9 +1,9 @@
 # YPortable
-  <p align="center">
-      <img width="30%" src="https://github.com/1234567Yang/YPortable/blob/main/images/newlogo.png?raw=true">
-  </p>
-<b style="font-size:20px" align=center>YPortable</b>
-
+<p align="center">
+  <img width="30%" src="https://github.com/1234567Yang/YPortable/blob/main/images/newlogo.png?raw=true">
+  <br>
+  <h3 align="center">YPortable</h3>
+</p>
 
 <p align="center">
 A lightweight, concise, and easy-to-use CSS Web UI framework for beginners.
