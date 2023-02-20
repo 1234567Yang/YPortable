@@ -24,7 +24,7 @@
   background:rgb(120,230,255);
 }
 /*--*/
-[class*=middle]:is(button, input[type=submit]):not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
+[class*=middle]:is(button, input[type=submit]):not(:disabled),input[class*=middle][type=file]:not(:disabled)::-webkit-file-upload-button {
   background:rgb(0,155,255);
   color:rgb(205,255,255);
   border-style:none;
@@ -34,17 +34,17 @@
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-[class*=middle]:is(button, input[type=submit]):hover:not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
+[class*=middle]:is(button, input[type=submit]):hover:not(:disabled),input[class*=middle][type=file]:not(:disabled)::-webkit-file-upload-button {
   background:rgb(0,120,220);
   color:rgb(190,230,255);
 }
-[class*=middle]:is(button, input[type=submit]):active:not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button{
+[class*=middle]:is(button, input[type=submit]):active:not(:disabled),input[class*=middle][type=file]:not(:disabled)::-webkit-file-upload-button{
   -webkit-transition-duration: 0.1s;
   background:rgb(0,100,220);
   color:rgb(120,230,255);
 }
 /*--*/
-[class*=dark]:is(button, input[type=submit]):not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
+[class*=dark]:is(button, input[type=submit]):not(:disabled),input[class*=dark][type=file]:not(:disabled)::-webkit-file-upload-button {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
   border-style:none;
@@ -54,11 +54,11 @@
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-[class*=dark]:is(button, input[type=submit]):hover:not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
+[class*=dark]:is(button, input[type=submit]):hover:not(:disabled),input[class*=dark][type=file]:not(:disabled)::-webkit-file-upload-button {
   background:rgb(0,50,120);
   color:rgb(0,130,220);
 }
-[class*=dark]:is(button, input[type=submit]):active:not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button{
+[class*=dark]:is(button, input[type=submit]):active:not(:disabled),input[class*=dark][type=file]:not(:disabled)::-webkit-file-upload-button{
   -webkit-transition-duration: 0.1s;
   background:rgb(0,20,100);
   color:rgb(0,100,200);
@@ -75,7 +75,7 @@
   filter:grayscale(60%);
 }
 /*--*/
-[class*=middle]:is(button, input[type=submit]):disabled,input[class*=bright][type=file]:disabled::-webkit-file-upload-button {
+[class*=middle]:is(button, input[type=submit]):disabled,input[class*=middle][type=file]:disabled::-webkit-file-upload-button {
   background:rgb(0,155,255);
   color:rgb(205,255,255);
   border-style:none;
@@ -84,7 +84,7 @@
   filter:grayscale(60%);
 }
 /*--*/
-[class*=dark]:is(button, input[type=submit]):disabled,input[class*=bright][type=file]:disabled::-webkit-file-upload-button {
+[class*=dark]:is(button, input[type=submit]):disabled,input[class*=dark][type=file]:disabled::-webkit-file-upload-button {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
   border-style:none;
