@@ -19,7 +19,7 @@ A lightweight, concise, and easy-to-use CSS Web UI framework for beginners.
 
 It is suitable for beginners to learn CSS, as well as for beginners to build web pages.
 <br>
-This is also a program that help myself learn CSS, and I am a rookie and I have poor aesthetic ability. In this case, this repository may be not brilliant, but useful.
+This is also a program that help myself learn CSS, I am both a rookie and a poor aesthetic ability person. In this case, this repository may be not brilliant.
 
 <p align="center">
       <img width="85%" src="https://github.com/1234567Yang/YPortable/blob/main/images/ViewEX.gif?raw=true">
@@ -79,4 +79,6 @@ This is also a program that help myself learn CSS, and I am a rookie and I have 
 ## Contribution:
 Thanks for those who contributed this repository.
 <br>
-If you want to contribute, please just create a Pull requests to contribute and **any** contribution is acceptable if there are no problems.
+Contribute requirement:
+- If you add a new kind of element, please provide bright/middle/dark version of that element, and formarting as other element by using ```/*--*/```
+- If you want to contribute, please just create a Pull requests to contribute and **any** contribution is acceptable if there are no problems.
