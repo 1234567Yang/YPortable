@@ -1,10 +1,43 @@
 /*Common*/
 .selfFit{
   display:inline-block;
+  word-break:break-word;
+}
+.center{
+  text-align:center;
+}
+/*--*/
+
+.superBigSize{
+  min-width:300px;
+  min-height:100px;
+  font-size:80px;
+}
+.bigSize{
+  min-width:100px;
+  min-height:50px;
+  font-size:30px;
+}
+.middleSize{
+  min-width:80px;
+  min-height:30px;
+  font-size:20px;
+}
+.smallSize{
+  min-width:50px;
+  min-height:20px;
+  font-size:15px;
+}
+.superSmallSize{
+  min-width:20px;
+  min-height:15px;
+  font-size:5px;
 }
 
+
 /*--button - input-submit - input-file-upload-button--*/
-[class*=bright]:is(button, input[type=submit]):not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
+
+[class~=bright]:is(button, input[type=submit]):not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -14,17 +47,17 @@
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-[class*=bright]:is(button, input[type=submit]):hover:not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
+[class~=bright]:is(button, input[type=submit]):hover:not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
   color:rgb(20,120,230);
   background:rgb(160,230,255);
 }
-[class*=bright]:is(button, input[type=submit]):active:not(:disabled),input[class*=bright][type=file]:not(:disabled)::-webkit-file-upload-button:active{
+[class~=bright]:is(button, input[type=submit]):active:not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button:active{
   -webkit-transition-duration: 0.1s;
   color:rgb(10,60,255);
   background:rgb(120,230,255);
 }
 /*--*/
-[class*=middle]:is(button, input[type=submit]):not(:disabled),input[class*=middle][type=file]:not(:disabled)::-webkit-file-upload-button {
+[class~=middle]:is(button, input[type=submit]):not(:disabled),input[class~=middle][type=file]:not(:disabled)::-webkit-file-upload-button {
   background:rgb(0,155,255);
   color:rgb(205,255,255);
   border-style:none;
@@ -34,17 +67,17 @@
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-[class*=middle]:is(button, input[type=submit]):hover:not(:disabled),input[class*=middle][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
+[class~=middle]:is(button, input[type=submit]):hover:not(:disabled),input[class~=middle][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
   background:rgb(0,120,220);
   color:rgb(190,230,255);
 }
-[class*=middle]:is(button, input[type=submit]):active:not(:disabled),input[class*=middle][type=file]:not(:disabled)::-webkit-file-upload-button:active{
+[class~=middle]:is(button, input[type=submit]):active:not(:disabled),input[class~=middle][type=file]:not(:disabled)::-webkit-file-upload-button:active{
   -webkit-transition-duration: 0.1s;
   background:rgb(0,100,220);
   color:rgb(120,230,255);
 }
 /*--*/
-[class*=dark]:is(button, input[type=submit]):not(:disabled),input[class*=dark][type=file]:not(:disabled)::-webkit-file-upload-button {
+[class~=dark]:is(button, input[type=submit]):not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
   border-style:none;
@@ -54,11 +87,11 @@
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-[class*=dark]:is(button, input[type=submit]):hover:not(:disabled),input[class*=dark][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
+[class~=dark]:is(button, input[type=submit]):hover:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
   background:rgb(0,50,120);
   color:rgb(0,130,220);
 }
-[class*=dark]:is(button, input[type=submit]):active:not(:disabled),input[class*=dark][type=file]:not(:disabled)::-webkit-file-upload-button:active{
+[class~=dark]:is(button, input[type=submit]):active:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:active{
   -webkit-transition-duration: 0.1s;
   background:rgb(0,20,100);
   color:rgb(0,100,200);
@@ -66,7 +99,7 @@
 
 /*--button - input-submit - input-file-upload-button - disabled--*/
 
-[class*=bright]:is(button, input[type=submit]):disabled,input[class*=bright][type=file]:disabled::-webkit-file-upload-button {
+[class~=bright]:is(button, input[type=submit]):disabled,input[class~=bright][type=file]:disabled::-webkit-file-upload-button {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -75,7 +108,7 @@
   filter:grayscale(60%);
 }
 /*--*/
-[class*=middle]:is(button, input[type=submit]):disabled,input[class*=middle][type=file]:disabled::-webkit-file-upload-button {
+[class~=middle]:is(button, input[type=submit]):disabled,input[class~=middle][type=file]:disabled::-webkit-file-upload-button {
   background:rgb(0,155,255);
   color:rgb(205,255,255);
   border-style:none;
@@ -84,7 +117,7 @@
   filter:grayscale(60%);
 }
 /*--*/
-[class*=dark]:is(button, input[type=submit]):disabled,input[class*=dark][type=file]:disabled::-webkit-file-upload-button {
+[class~=dark]:is(button, input[type=submit]):disabled,input[class~=dark][type=file]:disabled::-webkit-file-upload-button {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
   border-style:none;
@@ -95,19 +128,19 @@
 
 /*--p - input-file--*/
 
-p[class*=bright],input[class*=bright][type=file] {
+p[class~=bright],input[class~=bright][type=file] {
   color:rgb(50,200,255);
   background:rgb(235,255,255);
   border-radius:2px;
 }
 /*--*/
-p[class*=middle],input[class*=middle][type=file] {
+p[class~=middle],input[class~=middle][type=file] {
   background:rgb(50,150,220);
   color:rgb(205,255,255);
   border-radius:2px;
 }
 /*--*/
-p[class*=dark],input[class*=dark][type=file] {
+p[class~=dark],input[class~=dark][type=file] {
   background:rgb(20,100,170);
   color:rgb(100,200,255);
   border-radius:2px;
@@ -115,19 +148,19 @@ p[class*=dark],input[class*=dark][type=file] {
 
 /*--h1 - h6--*/
 
-[class*=bright]:is(h1, h2, h3, h4, h5, h6) {
+[class~=bright]:is(h1, h2, h3, h4, h5, h6) {
   background:rgb(220,255,255);
   color:rgb(50,120,255);
   border-radius:2px; 
 }
 /*--*/
-[class*=middle]:is(h1, h2, h3, h4, h5, h6) {
+[class~=middle]:is(h1, h2, h3, h4, h5, h6) {
   background:rgb(50,150,220);
   color:rgb(205,255,255);
   border-radius:2px;
 }
 /*--*/
-[class*=dark]:is(h1, h2, h3, h4, h5, h6) {
+[class~=dark]:is(h1, h2, h3, h4, h5, h6) {
   background:rgb(20,100,170);
   color:rgb(100,200,255);
   border-radius:2px;
@@ -135,19 +168,19 @@ p[class*=dark],input[class*=dark][type=file] {
 
 /*--p - round-border --*/
 
-p[class*=bright][class*=round-border] {
+p[class~=bright][class*=round-border] {
   color:rgb(50,200,255);
   background:rgb(235,255,255);
   border-radius:10px;
 }
 /*--*/
-p[class*=middle][class*=round-border] {
+p[class~=middle][class*=round-border] {
   background:rgb(50,150,220);
   color:rgb(205,255,255);
   border-radius:10px;
 }
 /*--*/
-p[class*=dark][class*=round-border] {
+p[class~=dark][class*=round-border] {
   background:rgb(20,100,170);
   color:rgb(100,200,255);
   border-radius:10px;
@@ -155,19 +188,19 @@ p[class*=dark][class*=round-border] {
 
 /*--h1 - h6 - round-border --*/
 
-[class*=bright][class*=round-border]:is(h1, h2, h3, h4, h5, h6) {
+[class~=bright][class*=round-border]:is(h1, h2, h3, h4, h5, h6) {
   background:rgb(220,255,255);
   color:rgb(50,120,255);
   border-radius:20px; 
 }
 /*--*/
-[class*=middle][class*=round-border]:is(h1, h2, h3, h4, h5, h6) {
+[class~=middle][class*=round-border]:is(h1, h2, h3, h4, h5, h6) {
   background:rgb(50,150,220);
   color:rgb(205,255,255);
   border-radius:20px;
 }
 /*--*/
-[class*=dark][class*=round-border]:is(h1, h2, h3, h4, h5, h6) {
+[class~=dark][class*=round-border]:is(h1, h2, h3, h4, h5, h6) {
   background:rgb(20,100,170);
   color:rgb(100,200,255);
   border-radius:20px;
@@ -175,7 +208,7 @@ p[class*=dark][class*=round-border] {
 
 /*--input - text - password - search - url - tel - email - color --*/
 
-input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: solid;
@@ -186,17 +219,17 @@ input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[ty
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(150,230,255);
 }
-input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(235,255,255);
   opacity: 1;
 }
 
-input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus {
   outline: none !important;
   border-color: rgb(50,150,255) !important;
   color: rgb(50,150,255) !important;
@@ -205,7 +238,7 @@ input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[ty
 
 /*--*/
 
-input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
   color: rgb(50,150,255);
   background: rgb(200,220,255);
   border-style: solid;
@@ -216,17 +249,17 @@ input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[ty
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(50,190,255);
 }
-input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(50,190,255);
   opacity: 1;
 }
 
-input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus {
   outline: none !important;
   border-color: rgb(20,100,255) !important;
   color: rgb(20,100,255) !important;
@@ -235,7 +268,7 @@ input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[ty
 
 /*--*/
 
-input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: solid;
@@ -246,17 +279,17 @@ input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(80,180,255);
 }
-input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(80,180,255);
   opacity: 1;
 }
 
-input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):focus:not(:disabled) {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):focus:not(:disabled) {
   outline: none !important;
   border-color: rgb(30,160,220) !important;
   color: rgb(180,240,255) !important;
@@ -265,7 +298,7 @@ input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type
 
 /*--input - disabled - text--*/
 
-input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: dotted;
@@ -275,11 +308,11 @@ input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[ty
   cursor:not-allowed;
 }
 
-input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(150,230,255);
 }
-input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(235,255,255);
   opacity: 1;
@@ -287,7 +320,7 @@ input[class*=bright]:is([type=text],[type=password],[type=search],[type=url],[ty
 
 /*--*/
 
-input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
   color: rgb(50,150,255);
   background: rgb(200,220,255);
   border-style: dotted;
@@ -297,11 +330,11 @@ input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[ty
   cursor:not-allowed;
 }
 
-input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(50,190,255);
 }
-input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(50,190,255);
   opacity: 1;
@@ -309,7 +342,7 @@ input[class*=middle]:is([type=text],[type=password],[type=search],[type=url],[ty
 
 /*--*/
 
-input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: dotted;
@@ -319,11 +352,11 @@ input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type
   cursor:not-allowed;
 }
 
-input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(80,180,255);
 }
-input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(80,180,255);
   opacity: 1;
@@ -332,7 +365,7 @@ input[class*=dark]:is([type=text],[type=password],[type=search],[type=url],[type
 
 /*--input - date - month - week - time - datetime - datetime-local --*/
 
-input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
+input[class~=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: solid;
@@ -342,7 +375,7 @@ input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=d
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
+input[class~=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
   outline: none !important;
   border-color: rgb(50,150,255) !important;
   color: rgb(50,150,255) !important;
@@ -351,7 +384,7 @@ input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=d
 
 /*--*/
 
-input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
+input[class~=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
 
   color: rgb(50,150,255);
   background: rgb(200,220,255);
@@ -362,7 +395,7 @@ input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=d
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
+input[class~=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
   outline: none !important;
   border-color: rgb(20,100,255) !important;
   color: rgb(20,100,255) !important;
@@ -371,7 +404,7 @@ input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=d
 
 /*--*/
 
-input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
+input[class~=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: solid;
@@ -382,7 +415,7 @@ input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=dat
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
+input[class~=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
   outline: none !important;
   border-color: rgb(30,160,220) !important;
   color: rgb(180,240,255) !important;
@@ -391,7 +424,7 @@ input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=dat
 
 /*--input - date - month - week - time - datetime - datetime-local - disabled --*/
 
-input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
+input[class~=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: dotted;
@@ -403,7 +436,7 @@ input[class*=bright]:is([type=date],[type=month],[type=week],[type=time],[type=d
 
 /*--*/
 
-input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
+input[class~=middle]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
 
   color: rgb(50,150,255);
   background: rgb(200,220,255);
@@ -416,7 +449,7 @@ input[class*=middle]:is([type=date],[type=month],[type=week],[type=time],[type=d
 
 /*--*/
 
-input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
+input[class~=dark]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: dotted;
@@ -428,10 +461,10 @@ input[class*=dark]:is([type=date],[type=month],[type=week],[type=time],[type=dat
 
 /*--input - checkbox --*/
 
-input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled) {
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled) {
   cursor:pointer;
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled) + label {
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled) + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -439,18 +472,18 @@ input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled) + label 
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class*=bright][type=checkbox]:not(:disabled) + label:hover {
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class~=bright][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(205,255,255);
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class*=bright][type=checkbox] + label:active {
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class~=bright][type=checkbox] + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(180,235,255);
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
   background:rgb(200,250,250);
   color:rgb(40,140,240);
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
+input[class~=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -460,7 +493,7 @@ input[class*=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled):
   background: rgb(220,255,255);
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
+input[class~=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -470,7 +503,7 @@ input[class*=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disab
   border-radius: 3px;
   background: rgb(240,255,255);
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
+input[class~=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -484,7 +517,7 @@ input[class*=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disab
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
+input[class~=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -499,10 +532,10 @@ input[class*=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled):
 
 /*--*/
 
-input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled) {
+input[class~=middle][type=checkbox]:not([class*=switch]):not(:disabled) {
   cursor:pointer;
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled) + label {
+input[class~=middle][type=checkbox]:not([class*=switch]):not(:disabled) + label {
   color:rgb(10,50,255);
   background:rgb(150,220,255);
   border-style:none;
@@ -510,18 +543,18 @@ input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled) + label 
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class*=middle][type=checkbox]:not(:disabled) + label:hover {
+input[class~=middle][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class~=middle][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(150,220,255);
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class*=middle][type=checkbox] + label:active {
+input[class~=middle][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class~=middle][type=checkbox] + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(150,220,255);
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
+input[class~=middle][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
   background:rgb(120,210,255);
   color:rgb(10,10,255);
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
+input[class~=middle][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -531,7 +564,7 @@ input[class*=middle][type=checkbox]:not([class*=switch]):checked:not(:disabled):
   background: rgb(180,220,255);
   -webkit-transition: 0.35s;
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
+input[class~=middle][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -541,7 +574,7 @@ input[class*=middle][type=checkbox]:not([class*=switch]):not(checked):not(:disab
   border-radius: 3px;
   background: rgb(200,240,255);
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
+input[class~=middle][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -555,7 +588,7 @@ input[class*=middle][type=checkbox]:not([class*=switch]):not(checked):not(:disab
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
+input[class~=middle][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -570,10 +603,10 @@ input[class*=middle][type=checkbox]:not([class*=switch]):checked:not(:disabled):
 
 /*--*/
 
-input[class*=dark][type=checkbox]:not([class*=switch]){
+input[class~=dark][type=checkbox]:not([class*=switch]){
   cursor:pointer;
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled) + label {
+input[class~=dark][type=checkbox]:not([class*=switch]):not(:disabled) + label {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style:none;
@@ -581,18 +614,18 @@ input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled) + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class*=dark][type=checkbox]:not(:disabled) + label:hover {
+input[class~=dark][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class~=dark][type=checkbox]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(50,100,205);
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class*=dark][type=checkbox]:not(:disabled) + label:active {
+input[class~=dark][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class~=dark][type=checkbox]:not(:disabled) + label:active {
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(50,100,205);
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
+input[class~=dark][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
   color: rgb(120,230,255);
   background: rgb(20,90,205);
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
+input[class~=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -602,7 +635,7 @@ input[class*=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::b
   background: rgb(100,180,255);
   -webkit-transition: 0.35s;
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
+input[class~=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
   content: "";
   display: block;
   position: relative;
@@ -612,7 +645,7 @@ input[class*=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disable
   border-radius: 3px;
   background: rgb(160,200,255);
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
+input[class~=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -626,7 +659,7 @@ input[class*=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disable
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
+input[class~=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
   content: "";
   display: block;
   visibility: visible;
@@ -641,10 +674,10 @@ input[class*=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::a
 
 /*--input - checkbox - disabled --*/
 
-input[class*=bright][type=checkbox]:not([class*=switch]):disabled {
+input[class~=bright][type=checkbox]:not([class*=switch]):disabled {
   cursor:not-allowed;
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):disabled + label {
+input[class~=bright][type=checkbox]:not([class*=switch]):disabled + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -652,7 +685,7 @@ input[class*=bright][type=checkbox]:not([class*=switch]):disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=bright][type=checkbox]:not([class*=switch]):disabled::before {
+input[class~=bright][type=checkbox]:not([class*=switch]):disabled::before {
   content: "";
   display: block;
   position: relative;
@@ -666,10 +699,10 @@ input[class*=bright][type=checkbox]:not([class*=switch]):disabled::before {
 
 /*--*/
 
-input[class*=middle][type=checkbox]:not([class*=switch]):disabled {
+input[class~=middle][type=checkbox]:not([class*=switch]):disabled {
   cursor:not-allowed;
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):disabled + label {
+input[class~=middle][type=checkbox]:not([class*=switch]):disabled + label {
   color:rgb(10,50,255);
   background:rgb(150,220,255);
   border-style:none;
@@ -677,7 +710,7 @@ input[class*=middle][type=checkbox]:not([class*=switch]):disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=middle][type=checkbox]:not([class*=switch]):disabled::before {
+input[class~=middle][type=checkbox]:not([class*=switch]):disabled::before {
   content: "";
   display: block;
   position: relative;
@@ -691,10 +724,10 @@ input[class*=middle][type=checkbox]:not([class*=switch]):disabled::before {
 
 /*--*/
 
-input[class*=dark][type=checkbox]:not([class*=switch]):disabled {
+input[class~=dark][type=checkbox]:not([class*=switch]):disabled {
   cursor:not-allowed;
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):disabled + label {
+input[class~=dark][type=checkbox]:not([class*=switch]):disabled + label {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style:none;
@@ -702,7 +735,7 @@ input[class*=dark][type=checkbox]:not([class*=switch]):disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=dark][type=checkbox]:not([class*=switch]):disabled::before {
+input[class~=dark][type=checkbox]:not([class*=switch]):disabled::before {
   content: "";
   display: block;
   position: relative;
@@ -716,17 +749,17 @@ input[class*=dark][type=checkbox]:not([class*=switch]):disabled::before {
 
 /*-- input - checkbox - switch --*/
 
-input[type=checkbox][class*=bright][class*=switch]:not(:disabled){
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled){
   width: 50px;
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=bright][class*=switch]:not(:disabled) + label {
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled) + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-radius: 5px;
 }
-input[type=checkbox][class*=bright][class*=switch]:not(:disabled)::before{
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled)::before{
   content: "\00A0on";
   color:rgb(50,200,255);
   display: block;
@@ -739,11 +772,11 @@ input[type=checkbox][class*=bright][class*=switch]:not(:disabled)::before{
   -webkit-transform: translate(0px,-2px) !important;
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=bright][class*=switch]:checked:not(:disabled)::before{
+input[type=checkbox][class~=bright][class*=switch]:checked:not(:disabled)::before{
   border-color:rgb(50,150,255);
   background: rgb(220,255,255);
 }
-input[type=checkbox][class*=bright][class*=switch]:not(:disabled)::after{
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled)::after{
   content: "";
   display: block;
   position: relative;
@@ -754,7 +787,7 @@ input[type=checkbox][class*=bright][class*=switch]:not(:disabled)::after{
   -webkit-transform: translate(0px,-20px) !important;
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=bright][class*=switch]:not(:disabled):checked::after{
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled):checked::after{
   -webkit-transform: translate(23px,-20px) !important;
   background: rgb(50,150,255);
   -webkit-box-shadow: 1px 1px 5px rgb(30,150,255);
@@ -762,17 +795,17 @@ input[type=checkbox][class*=bright][class*=switch]:not(:disabled):checked::after
 
 /*--*/
 
-input[type=checkbox][class*=middle][class*=switch]:not(:disabled){
+input[type=checkbox][class~=middle][class*=switch]:not(:disabled){
   width: 50px;
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=middle][class*=switch]:not(:disabled) + label {
+input[type=checkbox][class~=middle][class*=switch]:not(:disabled) + label {
   background:rgb(0,155,255);
   color:rgb(205,255,255);
   border-radius: 5px;
 }
-input[type=checkbox][class*=middle][class*=switch]:not(:disabled)::before{
+input[type=checkbox][class~=middle][class*=switch]:not(:disabled)::before{
   content: "\00A0on";
   color:rgb(20,130,255);
   display: block;
@@ -785,11 +818,11 @@ input[type=checkbox][class*=middle][class*=switch]:not(:disabled)::before{
   background: rgb(205,255,255);
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=middle][class*=switch]:checked:not(:disabled)::before{
+input[type=checkbox][class~=middle][class*=switch]:checked:not(:disabled)::before{
   border-color:rgb(0,80,255);
   background:rgb(205,230,255);
 }
-input[type=checkbox][class*=middle][class*=switch]:not(:disabled)::after{
+input[type=checkbox][class~=middle][class*=switch]:not(:disabled)::after{
   content: "";
   display: block;
   position: relative;
@@ -800,7 +833,7 @@ input[type=checkbox][class*=middle][class*=switch]:not(:disabled)::after{
   -webkit-transform: translate(0px,-20px) !important;
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=middle][class*=switch]:not(:disabled):checked::after{
+input[type=checkbox][class~=middle][class*=switch]:not(:disabled):checked::after{
   -webkit-transform: translate(23px,-20px) !important;
   background:rgb(0,80,255);
   -webkit-box-shadow: 1px 1px 5px rgb(10,100,255);
@@ -808,17 +841,17 @@ input[type=checkbox][class*=middle][class*=switch]:not(:disabled):checked::after
 
 /*--*/
 
-input[type=checkbox][class*=dark][class*=switch]:not(:disabled){
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled){
   width: 50px;
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=dark][class*=switch]:not(:disabled) + label {
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled) + label {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
   border-radius: 5px;
 }
-input[type=checkbox][class*=dark][class*=switch]:not(:disabled)::before{
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled)::before{
   content: "\00A0on";
   color:rgb(0,80,150);
   display: block;
@@ -831,11 +864,11 @@ input[type=checkbox][class*=dark][class*=switch]:not(:disabled)::before{
   -webkit-transform: translate(0px,-2px) !important;
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=dark][class*=switch]:not(:disabled):checked::before{
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled):checked::before{
   border-color:rgb(0,20,100);
   background:rgb(20,150,255);
 }
-input[type=checkbox][class*=dark][class*=switch]:not(:disabled)::after{
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled)::after{
   content: "";
   display: block;
   position: relative;
@@ -846,7 +879,7 @@ input[type=checkbox][class*=dark][class*=switch]:not(:disabled)::after{
   -webkit-transform: translate(0px,-20px) !important;
   -webkit-transition-duration: 0.35s;
 }
-input[type=checkbox][class*=dark][class*=switch]:not(:disabled):checked::after{
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled):checked::after{
   -webkit-box-shadow: 1px 1px 5px rgb(0,80,150);
   -webkit-transform: translate(23px,-20px) !important;
   background:rgb(0,20,100);
@@ -854,17 +887,17 @@ input[type=checkbox][class*=dark][class*=switch]:not(:disabled):checked::after{
 
 /*-- input[type=checkbox] - checkbox - switch - disabled --*/
 
-input[type=checkbox][class*=bright][class*=switch]:disabled{
+input[type=checkbox][class~=bright][class*=switch]:disabled{
   width: 50px;
   cursor:not-allowed;
 }
-input[type=checkbox][class*=bright][class*=switch]:disabled + label {
+input[type=checkbox][class~=bright][class*=switch]:disabled + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-radius: 5px;
   filter:grayscale(60%);
 }
-input[type=checkbox][class*=bright][class*=switch]:disabled::before{
+input[type=checkbox][class~=bright][class*=switch]:disabled::before{
   content: "";
   display: block;
   position: relative;
@@ -876,7 +909,7 @@ input[type=checkbox][class*=bright][class*=switch]:disabled::before{
   -webkit-transform: translate(0px,-2px) !important;
   filter:grayscale(60%);
 }
-input[type=checkbox][class*=bright][class*=switch]:disabled::after{
+input[type=checkbox][class~=bright][class*=switch]:disabled::after{
   content: "";
   display: block;
   position: relative;
@@ -887,7 +920,7 @@ input[type=checkbox][class*=bright][class*=switch]:disabled::after{
   -webkit-transform: translate(0px,-20px) !important;
   filter:grayscale(60%);
 }
-input[type=checkbox][class*=bright][class*=switch]:disabled:checked::after{
+input[type=checkbox][class~=bright][class*=switch]:disabled:checked::after{
   -webkit-transform: translate(23px,-20px) !important;
   background: rgb(50,150,255);
   -webkit-box-shadow: 1px 1px 5px rgb(30,150,255);
@@ -895,17 +928,17 @@ input[type=checkbox][class*=bright][class*=switch]:disabled:checked::after{
 
 /*--*/
 
-input[type=checkbox][class*=middle][class*=switch]:disabled{
+input[type=checkbox][class~=middle][class*=switch]:disabled{
   cursor:not-allowed;
   width: 50px;
 }
-input[type=checkbox][class*=middle][class*=switch]:disabled + label {
+input[type=checkbox][class~=middle][class*=switch]:disabled + label {
   background:rgb(0,155,255);
   color:rgb(205,255,255);
   border-radius: 5px;
   filter:grayscale(60%);
 }
-input[type=checkbox][class*=middle][class*=switch]:disabled::before{
+input[type=checkbox][class~=middle][class*=switch]:disabled::before{
   content: "";
   display: block;
   position: relative;
@@ -917,7 +950,7 @@ input[type=checkbox][class*=middle][class*=switch]:disabled::before{
   background: rgb(205,255,255);
   filter:grayscale(60%);
 }
-input[type=checkbox][class*=middle][class*=switch]:disabled::after{
+input[type=checkbox][class~=middle][class*=switch]:disabled::after{
   content: "";
   display: block;
   position: relative;
@@ -931,17 +964,17 @@ input[type=checkbox][class*=middle][class*=switch]:disabled::after{
 
 /*--*/
 
-input[type=checkbox][class*=dark][class*=switch]:disabled{
+input[type=checkbox][class~=dark][class*=switch]:disabled{
   cursor:not-allowed;
   width: 50px;
 }
-input[type=checkbox][class*=dark][class*=switch]:disabled + label {
+input[type=checkbox][class~=dark][class*=switch]:disabled + label {
   background:rgb(0,80,150);
   color:rgb(0,155,255);
   border-radius: 5px;
   filter:grayscale(60%);
 }
-input[type=checkbox][class*=dark][class*=switch]:disabled::before{
+input[type=checkbox][class~=dark][class*=switch]:disabled::before{
   content: "";
   display: block;
   position: relative;
@@ -953,7 +986,7 @@ input[type=checkbox][class*=dark][class*=switch]:disabled::before{
   -webkit-transform: translate(0px,-2px) !important;
   filter:grayscale(60%);
 }
-input[type=checkbox][class*=dark][class*=switch]:disabled::after{
+input[type=checkbox][class~=dark][class*=switch]:disabled::after{
   content: "";
   display: block;
   position: relative;
@@ -967,10 +1000,10 @@ input[type=checkbox][class*=dark][class*=switch]:disabled::after{
 
 /*--input - radio --*/
 
-input[class*=bright][type=radio]:not(:disabled){
+input[class~=bright][type=radio]:not(:disabled){
   cursor:pointer;
 }
-input[class*=bright][type=radio]:not(:disabled) + label {
+input[class~=bright][type=radio]:not(:disabled) + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -978,18 +1011,18 @@ input[class*=bright][type=radio]:not(:disabled) + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=bright][type=radio]:not(:disabled):hover, input[class*=bright][type=radio]:not(:disabled) + label:hover {
+input[class~=bright][type=radio]:not(:disabled):hover, input[class~=bright][type=radio]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(205,255,255);
 }
-input[class*=bright][type=radio]:not(:disabled):active, input[class*=bright][type=radio]:not(:disabled) + label:active{
+input[class~=bright][type=radio]:not(:disabled):active, input[class~=bright][type=radio]:not(:disabled) + label:active{
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(180,235,255);
 }
-input[class*=bright][type=radio]:not(:disabled):checked + label{
+input[class~=bright][type=radio]:not(:disabled):checked + label{
   background:rgb(200,250,250);
   color:rgb(40,140,240);
 }
-input[class*=bright][type=radio]:not(:disabled):checked::before {
+input[class~=bright][type=radio]:not(:disabled):checked::before {
   content: "";
   display: block;
   position: relative;
@@ -999,7 +1032,7 @@ input[class*=bright][type=radio]:not(:disabled):checked::before {
   background: rgb(220,255,255);
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=radio]:not(:disabled):not(checked)::before {
+input[class~=bright][type=radio]:not(:disabled):not(checked)::before {
   content: "";
   display: block;
   position: relative;
@@ -1009,7 +1042,7 @@ input[class*=bright][type=radio]:not(:disabled):not(checked)::before {
   border-radius: 25px;
   background: rgb(240,255,255);
 }
-input[class*=bright][type=radio]:not(:disabled):not(checked)::after {
+input[class~=bright][type=radio]:not(:disabled):not(checked)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -1023,7 +1056,7 @@ input[class*=bright][type=radio]:not(:disabled):not(checked)::after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=bright][type=radio]:not(:disabled):checked::after {
+input[class~=bright][type=radio]:not(:disabled):checked::after {
   content: "";
   display: block;
   visibility: visible;
@@ -1040,10 +1073,10 @@ input[class*=bright][type=radio]:not(:disabled):checked::after {
 
 /*--*/
 
-input[class*=middle][type=radio]:not(:disabled){
+input[class~=middle][type=radio]:not(:disabled){
   cursor:pointer;
 }
-input[class*=middle][type=radio]:not(:disabled) + label {
+input[class~=middle][type=radio]:not(:disabled) + label {
   color:rgb(10,50,255);
   background:rgb(150,220,255);
   border-style:none;
@@ -1051,18 +1084,18 @@ input[class*=middle][type=radio]:not(:disabled) + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=middle][type=radio]:not(:disabled):hover, input[class*=middle][type=radio]:not(:disabled) + label:hover {
+input[class~=middle][type=radio]:not(:disabled):hover, input[class~=middle][type=radio]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(150,220,255);
 }
-input[class*=middle][type=radio]:not(:disabled):active, input[class*=middle][type=radio]:not(:disabled) + label:active{
+input[class~=middle][type=radio]:not(:disabled):active, input[class~=middle][type=radio]:not(:disabled) + label:active{
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(150,220,255);
 }
-input[class*=middle][type=radio]:not(:disabled):checked + label{
+input[class~=middle][type=radio]:not(:disabled):checked + label{
   background:rgb(120,210,255);
   color:rgb(10,10,255);
 }
-input[class*=middle][type=radio]:not(:disabled):checked::before {
+input[class~=middle][type=radio]:not(:disabled):checked::before {
   content: "";
   display: block;
   position: relative;
@@ -1072,7 +1105,7 @@ input[class*=middle][type=radio]:not(:disabled):checked::before {
   background: rgb(180,220,255);
   -webkit-transition: 0.35s;
 }
-input[class*=middle][type=radio]:not(:disabled):not(checked)::before {
+input[class~=middle][type=radio]:not(:disabled):not(checked)::before {
   content: "";
   display: block;
   position: relative;
@@ -1082,7 +1115,7 @@ input[class*=middle][type=radio]:not(:disabled):not(checked)::before {
   border-radius: 25px;
   background: rgb(200,240,255);
 }
-input[class*=middle][type=radio]:not(:disabled):not(checked)::after {
+input[class~=middle][type=radio]:not(:disabled):not(checked)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -1096,7 +1129,7 @@ input[class*=middle][type=radio]:not(:disabled):not(checked)::after {
   left: 0px;
   -webkit-transition: 0.35s;
 }
-input[class*=middle][type=radio]:not(:disabled):checked::after {
+input[class~=middle][type=radio]:not(:disabled):checked::after {
   content: "";
   display: block;
   visibility: visible;
@@ -1113,10 +1146,10 @@ input[class*=middle][type=radio]:not(:disabled):checked::after {
 
 /*--*/
 
-input[class*=dark][type=radio]:not(:disabled){
+input[class~=dark][type=radio]:not(:disabled){
   cursor:pointer;
 }
-input[class*=dark][type=radio]:not(:disabled) + label {
+input[class~=dark][type=radio]:not(:disabled) + label {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style:none;
@@ -1124,18 +1157,18 @@ input[class*=dark][type=radio]:not(:disabled) + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[class*=dark][type=radio]:not(:disabled):hover, input[class*=dark][type=radio]:not(:disabled) + label:hover {
+input[class~=dark][type=radio]:not(:disabled):hover, input[class~=dark][type=radio]:not(:disabled) + label:hover {
   -webkit-box-shadow: 1px 1px 1px rgb(150,200,205);
 }
-input[class*=dark][type=radio]:not(:disabled):active, input[class*=dark][type=radio]:not(:disabled) + label:active{
+input[class~=dark][type=radio]:not(:disabled):active, input[class~=dark][type=radio]:not(:disabled) + label:active{
   -webkit-transition-duration: 0.1s;
   -webkit-box-shadow: 1px 1px 5px rgb(50,100,205);
 }
-input[class*=dark][type=radio]:not(:disabled):checked + label{
+input[class~=dark][type=radio]:not(:disabled):checked + label{
   color: rgb(120,230,255);
   background: rgb(20,90,205);
 }
-input[class*=dark][type=radio]:not(:disabled):checked::before {
+input[class~=dark][type=radio]:not(:disabled):checked::before {
   content: "";
   display: block;
   position: relative;
@@ -1145,7 +1178,7 @@ input[class*=dark][type=radio]:not(:disabled):checked::before {
   background: rgb(100,180,255);
   -webkit-transition: 0.35s;
 }
-input[class*=dark][type=radio]:not(:disabled):not(checked)::before {
+input[class~=dark][type=radio]:not(:disabled):not(checked)::before {
   content: "";
   display: block;
   position: relative;
@@ -1155,7 +1188,7 @@ input[class*=dark][type=radio]:not(:disabled):not(checked)::before {
   border-radius: 25px;
   background: rgb(160,200,255);
 }
-input[class*=dark][type=radio]:not(:disabled):not(checked)::after {
+input[class~=dark][type=radio]:not(:disabled):not(checked)::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -1167,7 +1200,7 @@ input[class*=dark][type=radio]:not(:disabled):not(checked)::after {
   position: relative;
   -webkit-transition: 0.35s;
 }
-input[class*=dark][type=radio]:not(:disabled):checked::after {
+input[class~=dark][type=radio]:not(:disabled):checked::after {
   content: "";
   display: block;
   visibility: visible;
@@ -1183,10 +1216,10 @@ input[class*=dark][type=radio]:not(:disabled):checked::after {
 
 /*--input - radio - disabled --*/
 
-input[class*=bright][type=radio]:disabled{
+input[class~=bright][type=radio]:disabled{
   cursor:not-allowed;
 }
-input[class*=bright][type=radio]:disabled + label {
+input[class~=bright][type=radio]:disabled + label {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
   border-style:none;
@@ -1194,7 +1227,7 @@ input[class*=bright][type=radio]:disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=bright][type=radio]:disabled::before {
+input[class~=bright][type=radio]:disabled::before {
   content: "";
   display: block;
   position: relative;
@@ -1207,10 +1240,10 @@ input[class*=bright][type=radio]:disabled::before {
 }
 /*--*/
 
-input[class*=middle][type=radio]:disabled{
+input[class~=middle][type=radio]:disabled{
   cursor:not-allowed;
 }
-input[class*=middle][type=radio]:disabled + label {
+input[class~=middle][type=radio]:disabled + label {
   color:rgb(10,50,255);
   background:rgb(150,220,255);
   border-style:none;
@@ -1218,7 +1251,7 @@ input[class*=middle][type=radio]:disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=middle][type=radio]:disabled::before {
+input[class~=middle][type=radio]:disabled::before {
   content: "";
   display: block;
   position: relative;
@@ -1232,10 +1265,10 @@ input[class*=middle][type=radio]:disabled::before {
 
 /*--*/
 
-input[class*=dark][type=radio]:disabled{
+input[class~=dark][type=radio]:disabled{
   cursor:not-allowed;
 }
-input[class*=dark][type=radio]:disabled + label {
+input[class~=dark][type=radio]:disabled + label {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style:none;
@@ -1243,7 +1276,7 @@ input[class*=dark][type=radio]:disabled + label {
   cursor:not-allowed;
   filter:grayscale(60%);
 }
-input[class*=dark][type=radio]:disabled::before {
+input[class~=dark][type=radio]:disabled::before {
   content: "";
   display: block;
   position: relative;
@@ -1257,10 +1290,10 @@ input[class*=dark][type=radio]:disabled::before {
 
 /*--input - color --*/
 
-input[class*=bright][type=color]:not(:disabled){
+input[class~=bright][type=color]:not(:disabled){
   visibility:hidden;
 }
-input[class*=bright][type=color]:not(:disabled)::-webkit-color-swatch:active{
+input[class~=bright][type=color]:not(:disabled)::-webkit-color-swatch:active{
   float:left;
   border-style:none;
   border-radius:10px;
@@ -1268,10 +1301,10 @@ input[class*=bright][type=color]:not(:disabled)::-webkit-color-swatch:active{
   background:rgb(120,230,255);
   -webkit-box-shadow: 0px 0px 10px 2px rgb(50,200,255);
 }
-input[class*=bright][type=color]:not(:disabled)::-webkit-color-swatch:hover{
+input[class~=bright][type=color]:not(:disabled)::-webkit-color-swatch:hover{
   -webkit-box-shadow: 0px 0px 10px 2px rgb(130,230,255);
 }
-input[class*=bright][type=color]:not(:disabled)::-webkit-color-swatch {
+input[class~=bright][type=color]:not(:disabled)::-webkit-color-swatch {
   border-radius:10px;
   display: block;
   position: relative;
@@ -1281,10 +1314,10 @@ input[class*=bright][type=color]:not(:disabled)::-webkit-color-swatch {
   -webkit-transition-duration: 0.35s;
   }
 /*--*/
-input[class*=middle][type=color]:not(:disabled){
+input[class~=middle][type=color]:not(:disabled){
   visibility:hidden;
 }
-input[class*=middle][type=color]:not(:disabled)::-webkit-color-swatch:active{
+input[class~=middle][type=color]:not(:disabled)::-webkit-color-swatch:active{
   float:left;
   border-style:none;
   border-radius:10px;
@@ -1292,10 +1325,10 @@ input[class*=middle][type=color]:not(:disabled)::-webkit-color-swatch:active{
   background:rgb(120,230,255);
   -webkit-box-shadow: 0px 0px 10px 2px rgb(10,100,255);
 }
-input[class*=middle][type=color]:not(:disabled)::-webkit-color-swatch:hover{
+input[class~=middle][type=color]:not(:disabled)::-webkit-color-swatch:hover{
   -webkit-box-shadow: 0px 0px 10px 2px rgb(10,120,255);
 }
-input[class*=middle][type=color]:not(:disabled)::-webkit-color-swatch {
+input[class~=middle][type=color]:not(:disabled)::-webkit-color-swatch {
   border-radius:10px;
   display: block;
   position: relative;
@@ -1305,10 +1338,10 @@ input[class*=middle][type=color]:not(:disabled)::-webkit-color-swatch {
   -webkit-transition-duration: 0.35s;
   }
 /*--*/
-input[class*=dark][type=color]:not(:disabled){
+input[class~=dark][type=color]:not(:disabled){
   visibility:hidden;
 }
-input[class*=dark][type=color]:not(:disabled)::-webkit-color-swatch:active{
+input[class~=dark][type=color]:not(:disabled)::-webkit-color-swatch:active{
   float:left;
   border-style:none;
   border-radius:10px;
@@ -1316,10 +1349,10 @@ input[class*=dark][type=color]:not(:disabled)::-webkit-color-swatch:active{
   background:rgb(120,230,255);
   -webkit-box-shadow: 0px 0px 10px 2px rgb(10,20,255);
 }
-input[class*=dark][type=color]:not(:disabled)::-webkit-color-swatch:hover{
+input[class~=dark][type=color]:not(:disabled)::-webkit-color-swatch:hover{
   -webkit-box-shadow: 0px 0px 10px 2px rgb(10,50,255);
 }
-input[class*=dark][type=color]:not(:disabled)::-webkit-color-swatch {
+input[class~=dark][type=color]:not(:disabled)::-webkit-color-swatch {
   border-radius:10px;
   display: block;
   position: relative;
@@ -1331,10 +1364,10 @@ input[class*=dark][type=color]:not(:disabled)::-webkit-color-swatch {
 
 /*--input - color -disabled --*/
 
-input[class*=bright][type=color]:disabled{
+input[class~=bright][type=color]:disabled{
   visibility:hidden;
 }
-input[class*=bright][type=color]:disabled::-webkit-color-swatch {
+input[class~=bright][type=color]:disabled::-webkit-color-swatch {
   border-radius:10px;
   display: block;
   position: relative;
@@ -1344,10 +1377,10 @@ input[class*=bright][type=color]:disabled::-webkit-color-swatch {
   filter:grayscale(60%);
   }
 /*--*/
-input[class*=middle][type=color]:disabled{
+input[class~=middle][type=color]:disabled{
   visibility:hidden;
 }
-input[class*=middle][type=color]:disabled::-webkit-color-swatch {
+input[class~=middle][type=color]:disabled::-webkit-color-swatch {
   border-radius:10px;
   display: block;
   position: relative;
@@ -1357,10 +1390,10 @@ input[class*=middle][type=color]:disabled::-webkit-color-swatch {
   filter:grayscale(60%);
   }
 /*--*/
-input[class*=dark][type=color]:disabled{
+input[class~=dark][type=color]:disabled{
   visibility:hidden;
 }
-input[class*=dark][type=color]:disabled::-webkit-color-swatch {
+input[class~=dark][type=color]:disabled::-webkit-color-swatch {
   border-radius:10px;
   display: block;
   position: relative;
@@ -1576,89 +1609,89 @@ input[class="dark"][type="range"]:disabled::-webkit-slider-thumb {
 
 /*--table--*/
 
-table[class*=bright] {
+table[class~=bright] {
   background:rgb(250,255,255);
   border-radius:5px;
   border-color:rgb(50,150,255);
 }
-table[class*=bright] th{
+table[class~=bright] th{
   color:rgb(20,100,255);
   border-radius:5px;
   border-color:rgb(50,150,255);
 }
-table[class*=bright] td{
+table[class~=bright] td{
   color:rgb(30,120,255);
   border-radius:5px;
 }
-table[class*=bright] tr{
+table[class~=bright] tr{
   background:rgb(220,255,255);
    -webkit-transition-duration: 0.1s;
 }
-table[class*=bright] tr:hover{
+table[class~=bright] tr:hover{
    background:rgb(180,250,255);
   -webkit-box-shadow: 1px 1px 5px rgb(200,250,255);
 }
 
 /*--*/
 
-table[class*=middle] {
+table[class~=middle] {
   background:rgb(160,250,255);
   border-radius:5px;
   border-color:rgb(50,10,255);
 }
-table[class*=middle] th{
+table[class~=middle] th{
   color:rgb(10,50,255);
   border-radius:5px;
   border-color:rgb(50,150,255);
 }
-table[class*=middle] td{
+table[class~=middle] td{
   color:rgb(50,10,255);
   border-radius:5px;
 }
-table[class*=middle] tr{
+table[class~=middle] tr{
   background:rgb(150,220,255);
    -webkit-transition-duration: 0.1s;
 }
-table[class*=middle] tr:hover{
+table[class~=middle] tr:hover{
    background:rgb(100,200,255);
   -webkit-box-shadow: 1px 1px 5px rgb(100,200,255);
 }
 
 /*--*/
 
-table[class*=dark] {
+table[class~=dark] {
   background: rgb(100,200,205);
   border-radius:5px;
   border-color:rgb(50,10,255);
 }
-table[class*=dark] th{
+table[class~=dark] th{
   color:rgb(100,230,255);
   border-radius:5px;
   border-color:rgb(50,150,255);
 }
-table[class*=dark] td{
+table[class~=dark] td{
   color:rgb(120,220,255);
   border-radius:5px;
 }
-table[class*=dark] tr{
+table[class~=dark] tr{
   background:rgb(50,100,205);
    -webkit-transition-duration: 0.1s;
 }
-table[class*=dark] tr:hover{
+table[class~=dark] tr:hover{
    background:rgb(10,50,210);
   -webkit-box-shadow: 1px 1px 5px rgb(10,50,210);
 }
 
 /*-- abbr --*/
 
-abbr[class*=bright]{
+abbr[class~=bright]{
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-radius: 2px;
   text-decoration: underline dotted rgb(30,150,230);
   position:relative;
 }
-abbr[class*=bright]:hover::after{
+abbr[class~=bright]:hover::after{
   /*code from here: https://stackoverflow.com/questions/47695771/css-pseudo-element-tooltip-has-the-same-width-as-the-original-element*/
   color: rgb(50,200,255);
   background: rgba(235,255,255,0.8);
@@ -1680,14 +1713,14 @@ abbr[class*=bright]:hover::after{
 
 /*--*/
 
-abbr[class*=middle]{
+abbr[class~=middle]{
   background:rgb(50,150,220);
   color:rgb(205,255,255);
   border-radius: 2px;
   text-decoration: underline dotted rgb(30,150,230);
   position:relative;
 }
-abbr[class*=middle]:hover::after{
+abbr[class~=middle]:hover::after{
   background:rgb(50,150,220);
   color:rgb(205,255,255);
   content:attr(hint);
@@ -1708,14 +1741,14 @@ abbr[class*=middle]:hover::after{
 
 /*--*/
 
-abbr[class*=dark]{
+abbr[class~=dark]{
   background:rgb(20,100,170);
   color:rgb(100,200,255);
   border-radius: 2px;
   text-decoration: underline dotted rgb(30,150,230);
   position:relative;
 }
-abbr[class*=dark]:hover::after{
+abbr[class~=dark]:hover::after{
   background:rgb(20,100,170);
   color:rgb(100,200,255);
   content:attr(hint);
@@ -1742,7 +1775,7 @@ abbr[class*=dark]:hover::after{
 
 /*-- select --*/
 
-select[class*=bright]:not(:disabled){
+select[class~=bright]:not(:disabled){
   border-style:none;
   outline:none !important;
   border-radius:2px;
@@ -1751,23 +1784,23 @@ select[class*=bright]:not(:disabled){
   background:rgb(205,255,255);
   -webkit-transition-duration: 0.35s;
 }
-select[class*=bright]:not(:disabled):hover{
+select[class~=bright]:not(:disabled):hover{
   color:rgb(20,120,230);
   background:rgb(160,230,255);
 }
-select[class*=bright]:not(:disabled):active{
+select[class~=bright]:not(:disabled):active{
   -webkit-transition-duration: 0.1s;
   color:rgb(10,60,255);
   background:rgb(120,230,255);
 }
-select[class*=bright]:not(:disabled) > option{
+select[class~=bright]:not(:disabled) > option{
   color:rgb(50,150,255);
   background:rgb(205,255,255);
 }
 
 /*--*/
 
-select[class*=middle]:not(:disabled){
+select[class~=middle]:not(:disabled){
   border-style:none;
   outline:none !important;
   border-radius:2px;
@@ -1776,23 +1809,23 @@ select[class*=middle]:not(:disabled){
   color:rgb(205,255,255);
   -webkit-transition-duration: 0.35s;
 }
-select[class*=middle]:not(:disabled):hover{
+select[class~=middle]:not(:disabled):hover{
   background:rgb(0,120,220);
   color:rgb(190,230,255);
 }
-select[class*=middle]:not(:disabled):active{
+select[class~=middle]:not(:disabled):active{
   -webkit-transition-duration: 0.1s;
   background:rgb(0,100,220);
   color:rgb(120,230,255);
 }
-select[class*=middle]:not(:disabled) > option{
+select[class~=middle]:not(:disabled) > option{
   background:rgb(0,155,255);
   color:rgb(205,255,255);
 }
 
 /*--*/
 
-select[class*=dark]:not(:disabled){
+select[class~=dark]:not(:disabled){
   border-style:none;
   outline:none !important;
   border-radius:2px;
@@ -1801,23 +1834,23 @@ select[class*=dark]:not(:disabled){
   color:rgb(0,155,255);
   -webkit-transition-duration: 0.35s;
 }
-select[class*=dark]:not(:disabled):hover{
+select[class~=dark]:not(:disabled):hover{
   background:rgb(0,50,120);
   color:rgb(0,130,220);
 }
-select[class*=dark]:not(:disabled):active{
+select[class~=dark]:not(:disabled):active{
   -webkit-transition-duration: 0.1s;
   background:rgb(0,20,100);
   color:rgb(0,100,200);
 }
-select[class*=dark]:not(:disabled) > option{
+select[class~=dark]:not(:disabled) > option{
   background:rgb(0,80,150);
   color:rgb(0,155,255);
 }
 
 /*-- select - disabled --*/
 
-select[class*=bright]:disabled{
+select[class~=bright]:disabled{
   border-style:none;
   outline:none !important;
   border-radius:2px;
@@ -1829,7 +1862,7 @@ select[class*=bright]:disabled{
 
 /*--*/
 
-select[class*=middle]:disabled{
+select[class~=middle]:disabled{
   border-style:none;
   outline:none !important;
   border-radius:2px;
@@ -1841,7 +1874,7 @@ select[class*=middle]:disabled{
 
 /*--*/
 
-select[class*=dark]:disabled{
+select[class~=dark]:disabled{
   border-style:none;
   outline:none !important;
   border-radius:2px;
