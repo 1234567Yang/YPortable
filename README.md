@@ -1,6 +1,6 @@
 # YPortable
   <p align="center">
-      <img width="45%" src="https://github.com/1234567Yang/YPortable/blob/main/images/newlogo.png?raw=true">
+      <img width="30%" src="https://github.com/1234567Yang/YPortable/blob/main/images/newlogo.png?raw=true">
   </p>
 
 <p align="center">
