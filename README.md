@@ -25,19 +25,31 @@ A lightweight, concise, and easy-to-use CSS Web UI framework for beginners.
 
 ### Want examples? Here is one:
 
-1: Copy the style sheet [Here](https://github.com/1234567Yang/YPortable/blob/main/CSS/Blue.css)
+1: Copy the CSS file [Here](https://github.com/1234567Yang/YPortable/tree/main/CSS)
 
 
 2: Open an online HTML testing website such as [This](https://c.runoob.com/front-end/61/)
 
 
-3: Adding this to your code:
+3: Adding this to your code to see the result:
 
 ```html
-<button class="bright" >test</button>
-<input class="bright" type="text" placeholder="test">
-<input type="checkbox" id="inputCD1" class="bright" disabled><label for="inputCD1">test</label>
-<input type="checkbox" id="inputSC1" class="bright switch"><label for="inputSC1">test</label>
+<button class="bright bigSize selfFit" >YPortable</button>
+<br><br>
+
+<input class="bright bigSize" type="text" placeholder="YPortable">
+<br><br>
+
+<input type="checkbox" id="inputCD1" class="bright"><label for="inputCD1">YPortable</label>
+<input type="checkbox" id="inputCD1" class="bright" disabled><label for="inputCD1">YPortable</label>
+<br><br>
+
+<input type="checkbox" id="inputSC1" class="bright switch"><label for="inputSC1">YPortable</label>
+<br><br>
+
+<button class="bright bigSize selfFit">
+  YPortable
+</button>
 ```
 
 ## Introduction:
