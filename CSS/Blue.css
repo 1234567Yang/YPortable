@@ -1739,3 +1739,114 @@ abbr[class*=dark]:hover::after{
 	from {opacity: 0;}
 	to {opacity: 1;}
 }
+
+/*-- select --*/
+
+select[class*=bright]:not(:disabled){
+  border-style:none;
+  outline:none !important;
+  border-radius:2px;
+  cursor:pointer;
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  -webkit-transition-duration: 0.35s;
+}
+select[class*=bright]:not(:disabled):hover{
+  color:rgb(20,120,230);
+  background:rgb(160,230,255);
+}
+select[class*=bright]:not(:disabled):active{
+  -webkit-transition-duration: 0.1s;
+  color:rgb(10,60,255);
+  background:rgb(120,230,255);
+}
+select[class*=bright]:not(:disabled) > option{
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+}
+
+/*--*/
+
+select[class*=middle]:not(:disabled){
+  border-style:none;
+  outline:none !important;
+  border-radius:2px;
+  cursor:pointer;
+  background:rgb(0,155,255);
+  color:rgb(205,255,255);
+  -webkit-transition-duration: 0.35s;
+}
+select[class*=middle]:not(:disabled):hover{
+  background:rgb(0,120,220);
+  color:rgb(190,230,255);
+}
+select[class*=middle]:not(:disabled):active{
+  -webkit-transition-duration: 0.1s;
+  background:rgb(0,100,220);
+  color:rgb(120,230,255);
+}
+select[class*=middle]:not(:disabled) > option{
+  background:rgb(0,155,255);
+  color:rgb(205,255,255);
+}
+
+/*--*/
+
+select[class*=dark]:not(:disabled){
+  border-style:none;
+  outline:none !important;
+  border-radius:2px;
+  cursor:pointer;
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+  -webkit-transition-duration: 0.35s;
+}
+select[class*=dark]:not(:disabled):hover{
+  background:rgb(0,50,120);
+  color:rgb(0,130,220);
+}
+select[class*=dark]:not(:disabled):active{
+  -webkit-transition-duration: 0.1s;
+  background:rgb(0,20,100);
+  color:rgb(0,100,200);
+}
+select[class*=dark]:not(:disabled) > option{
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+}
+
+/*-- select - disabled --*/
+
+select[class*=bright]:disabled{
+  border-style:none;
+  outline:none !important;
+  border-radius:2px;
+  cursor:not-allowed;
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  filter:grayscale(60%);
+}
+
+/*--*/
+
+select[class*=middle]:disabled{
+  border-style:none;
+  outline:none !important;
+  border-radius:2px;
+  cursor:not-allowed;
+  background:rgb(0,155,255);
+  color:rgb(205,255,255);
+  filter:grayscale(60%);
+}
+
+/*--*/
+
+select[class*=dark]:disabled{
+  border-style:none;
+  outline:none !important;
+  border-radius:2px;
+  cursor:not-allowed;
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+  filter:grayscale(60%);
+}
