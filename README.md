@@ -2,7 +2,7 @@
   <p align="center">
       <img width="30%" src="https://github.com/1234567Yang/YPortable/blob/main/images/newlogo.png?raw=true">
   </p>
-<b>YPortable</b>
+<b style="font-size:20px" align=center>YPortable</b>
 
 
 <p align="center">
