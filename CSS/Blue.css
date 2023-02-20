@@ -64,7 +64,7 @@
   color:rgb(0,100,200);
 }
 
-/*-- button - disabled --*/
+/*-- button - input - submit - disabled --*/
 
 [class*=bright]:is(button, input[type=submit]):disabled {
   color:rgb(50,150,255);
