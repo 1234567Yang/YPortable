@@ -8,23 +8,13 @@ A lightweight, concise, and easy-to-use CSS Web UI framework for beginners.
 </p>
 
 
+
 ## Guide Table
-- [Introduction](#Introduction)
 - [Quick start](#QuickStart)
+- [Introduction](#Introduction)
 - [Distinguishing feature](#DistinguishingFeature)
 - [Supported Browsers](#SupportedBrowsers)
 - [Contribution](#Contribution)
-
-## Introduction
-
-It is suitable for beginners to learn CSS, as well as for beginners to build web pages.
-<br>
-This is also a program that help myself learn CSS, I am both a rookie and a poor aesthetic ability person. In this case, this repository may be not brilliant.
-
-<p align="center">
-      <img width="85%" src="https://github.com/1234567Yang/YPortable/blob/main/images/ViewEX.gif?raw=true">
-</p>
-
 
 ## QuickStart
 
@@ -49,6 +39,16 @@ This is also a program that help myself learn CSS, I am both a rookie and a poor
 <input type="checkbox" id="inputCD1" class="bright" disabled><label for="inputCD1">test</label>
 <input type="checkbox" id="inputSC1" class="bright switch"><label for="inputSC1">test</label>
 ```
+
+## Introduction:
+
+It is suitable for beginners to learn CSS, as well as for beginners to build web pages.
+<br>
+This is also a program that help myself learn CSS, I am both a rookie and a poor aesthetic ability person. In this case, this repository may be not brilliant.
+
+<p align="center">
+      <img width="85%" src="https://github.com/1234567Yang/YPortable/blob/main/images/ViewEX.gif?raw=true">
+</p>
 
 ## DistinguishingFeature:
 
