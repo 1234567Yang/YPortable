@@ -101,13 +101,13 @@ p[class*=bright],input[class*=bright][type=file] {
   border-radius:2px;
 }
 /*--*/
-p[class*=middle],input[class*=bright][type=file] {
+p[class*=middle],input[class*=middle][type=file] {
   background:rgb(50,150,220);
   color:rgb(205,255,255);
   border-radius:2px;
 }
 /*--*/
-p[class*=dark],input[class*=bright][type=file] {
+p[class*=dark],input[class*=dark][type=file] {
   background:rgb(20,100,170);
   color:rgb(100,200,255);
   border-radius:2px;
