@@ -3,7 +3,7 @@
   display:inline-block;
 }
 
-/*--button--*/
+/*--button - input - submit --*/
 [class*=bright]:is(button, input[type=submit]):not(:disabled) {
   color:rgb(50,150,255);
   background:rgb(205,255,255);
