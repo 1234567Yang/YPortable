@@ -93,21 +93,21 @@
   filter:grayscale(60%);
 }
 
-/*--p--*/
+/*--p - input-file--*/
 
-p[class*=bright] {
+p[class*=bright],input[class*=bright][type=file] {
   color:rgb(50,200,255);
   background:rgb(235,255,255);
   border-radius:2px;
 }
 /*--*/
-p[class*=middle] {
+p[class*=middle],input[class*=bright][type=file] {
   background:rgb(50,150,220);
   color:rgb(205,255,255);
   border-radius:2px;
 }
 /*--*/
-p[class*=dark] {
+p[class*=dark],input[class*=bright][type=file] {
   background:rgb(20,100,170);
   color:rgb(100,200,255);
   border-radius:2px;
