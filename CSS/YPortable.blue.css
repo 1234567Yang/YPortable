@@ -36,7 +36,7 @@
 }
 
 
-/*--button - input-submit - input-file-upload-button--*/
+/*--button - input-submit - input-file-upload-button - details[class~=bright] > summary hover and active--*/
 
 [class~=bright]:is(button, input[type=submit]):not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
   color:rgb(50,150,255);
@@ -48,11 +48,11 @@
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-[class~=bright]:is(button, input[type=submit]):hover:not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
+[class~=bright]:is(button, input[type=submit]):hover:not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button:hover,details[class~=bright] > summary:hover {
   color:rgb(20,120,230);
   background:rgb(160,230,255);
 }
-[class~=bright]:is(button, input[type=submit]):active:not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button:active{
+[class~=bright]:is(button, input[type=submit]):active:not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button:active, details[class~=bright] > summary:active{
   -webkit-transition-duration: 0.1s;
   color:rgb(10,60,255);
   background:rgb(120,230,255);
@@ -68,11 +68,11 @@
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-[class~=middle]:is(button, input[type=submit]):hover:not(:disabled),input[class~=middle][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
+[class~=middle]:is(button, input[type=submit]):hover:not(:disabled),input[class~=middle][type=file]:not(:disabled)::-webkit-file-upload-button:hover, details[class~=middle] > summary:hover {
   background:rgb(0,120,220);
   color:rgb(190,230,255);
 }
-[class~=middle]:is(button, input[type=submit]):active:not(:disabled),input[class~=middle][type=file]:not(:disabled)::-webkit-file-upload-button:active{
+[class~=middle]:is(button, input[type=submit]):active:not(:disabled),input[class~=middle][type=file]:not(:disabled)::-webkit-file-upload-button:active, details[class~=middle] > summary:active{
   -webkit-transition-duration: 0.1s;
   background:rgb(0,100,220);
   color:rgb(120,230,255);
@@ -88,11 +88,11 @@
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
-[class~=dark]:is(button, input[type=submit]):hover:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
+[class~=dark]:is(button, input[type=submit]):hover:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:hover, details[class~=dark] > summary:hover {
   background:rgb(0,50,120);
   color:rgb(0,130,220);
 }
-[class~=dark]:is(button, input[type=submit]):active:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:active{
+[class~=dark]:is(button, input[type=submit]):active:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:active, details[class~=dark] > summary:active{
   -webkit-transition-duration: 0.1s;
   background:rgb(0,20,100);
   color:rgb(0,100,200);
@@ -1898,11 +1898,7 @@ details[class~=bright] > summary{
   -webkit-transition-duration: 0.35s;
   cursor:pointer;
 }
-details[class~=bright] > summary:hover{
-  color:rgb(20,120,230);
-  background:rgb(160,230,255);
-}
-details[class~=bright] > :not(summary){
+details[class~=bright] > :not(summary):not(details){
   border-radius:5px;
   color:rgb(50,150,255);
   background:rgb(205,255,255);
@@ -1954,11 +1950,7 @@ details[class~=middle] > summary{
   -webkit-transition-duration: 0.35s;
   cursor:pointer;
 }
-details[class~=middle] > summary:hover{
-  background:rgb(0,120,220);
-  color:rgb(190,230,255);
-}
-details[class~=middle] > :not(summary){
+details[class~=middle] > :not(summary):not(details){
   border-radius:5px;
   background:rgb(0,155,255);
   color:rgb(205,255,255);
@@ -2009,10 +2001,6 @@ details[class~=dark] > summary{
   color:rgb(0,155,255);
   -webkit-transition-duration: 0.35s;
   cursor:pointer;
-}
-details[class~=dark] > summary:hover{
-  background:rgb(0,50,120);
-  color:rgb(0,130,220);
 }
 details[class~=dark] > :not(summary):not(details){ /*:not(details) to avoid 2nd details tag BUG*/
   border-radius:5px;
