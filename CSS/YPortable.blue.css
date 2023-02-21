@@ -1884,3 +1884,171 @@ select[class~=dark]:disabled{
   color:rgb(0,155,255);
   filter:grayscale(60%);
 }
+
+/*-- details --*/
+
+details[class~=bright]{
+  position: relative;
+  transform:translate(15px,0px);
+}
+details[class~=bright] > summary{
+  border-radius:5px;
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  -webkit-transition-duration: 0.35s;
+  cursor:pointer;
+}
+details[class~=bright] > summary:hover{
+  color:rgb(20,120,230);
+  background:rgb(160,230,255);
+}
+details[class~=bright] > :not(summary){
+  border-radius:5px;
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  border:solid 1px rgb(50,150,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(50,150,255);
+}
+details[class~=bright]:not([open]) > summary::before{
+  content: "▶";
+  color:rgb(50,150,255);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  transform-origin: center center;
+  -webkit-transform: rotate(0deg) translate(-15px,0px) !important; 
+  -webkit-transition-duration: 0.35s;
+}
+details[class~=bright][open] > summary::before{
+  content: "▶";
+  color:rgb(50,150,255);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  transform-origin: center center;
+  -webkit-transform: rotate(90deg) translate(5px,0px) !important; 
+  -webkit-transition-duration: 0.35s;
+}
+details[class~=bright] > summary:first-of-type {
+  list-style-type: none;
+}
+details[class~=bright][open] > :not(summary){
+  opacity: 1;    /*-- small BUG here, I do not know how to fix it. --*/
+  -webkit-transition: 0.35s;
+}
+details[class~=bright]:not([open]) > :not(summary){
+  opacity: 0;
+  -webkit-transition: 0.35s;
+}
+
+/*--*/
+
+details[class~=middle]{
+  position: relative;
+  transform:translate(15px,0px);
+}
+details[class~=middle] > summary{
+  border-radius:5px;
+  background:rgb(0,155,255);
+  color:rgb(205,255,255);
+  -webkit-transition-duration: 0.35s;
+  cursor:pointer;
+}
+details[class~=middle] > summary:hover{
+  background:rgb(0,120,220);
+  color:rgb(190,230,255);
+}
+details[class~=middle] > :not(summary){
+  border-radius:5px;
+  background:rgb(0,155,255);
+  color:rgb(205,255,255);
+  border:solid 1px rgb(205,255,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(205,255,255);
+}
+details[class~=middle]:not([open]) > summary::before{
+  content: "▶";
+  color:rgb(0,80,150);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  transform-origin: center center;
+  -webkit-transform: rotate(0deg) translate(-15px,0px) !important; 
+  -webkit-transition-duration: 0.35s;
+}
+details[class~=middle][open] > summary::before{
+  content: "▶";
+  color:rgb(0,80,150);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  transform-origin: center center;
+  -webkit-transform: rotate(90deg) translate(5px,0px) !important; 
+  -webkit-transition-duration: 0.35s;
+}
+details[class~=middle] > summary:first-of-type {
+  list-style-type: none;
+}
+details[class~=middle][open] > :not(summary){
+  opacity: 1;    /*-- small BUG here, I do not know how to fix it. --*/
+  -webkit-transition: 0.35s;
+}
+details[class~=middle]:not([open]) > :not(summary){
+  opacity: 0;
+  -webkit-transition: 0.35s;
+}
+
+/*--*/
+
+details[class~=dark]{
+  position: relative;
+  transform:translate(15px,0px);
+}
+details[class~=dark] > summary{
+  border-radius:5px;
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+  -webkit-transition-duration: 0.35s;
+  cursor:pointer;
+}
+details[class~=dark] > summary:hover{
+  background:rgb(0,50,120);
+  color:rgb(0,130,220);
+}
+details[class~=dark] > :not(summary):not(details){ /*:not(details) to avoid 2nd details tag BUG*/
+  border-radius:5px;
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+  border:solid 1px rgb(0,155,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(0,155,255);
+}
+details[class~=dark]:not([open]) > summary::before{
+  content: "▶";
+  color:rgb(0,155,255);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  transform-origin: center center;
+  -webkit-transform: rotate(0deg) translate(-15px,0px) !important; 
+  -webkit-transition-duration: 0.35s;
+}
+details[class~=dark][open] > summary::before{
+  content: "▶";
+  color:rgb(0,155,255);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  transform-origin: center center;
+  -webkit-transform: rotate(90deg) translate(5px,0px) !important; 
+  -webkit-transition-duration: 0.35s;
+}
+details[class~=dark] > summary:first-of-type {
+  list-style-type: none;
+}
+details[class~=dark][open] > :not(summary){
+  opacity: 1;    /*-- small BUG here, I do not know how to fix it. --*/
+  -webkit-transition: 0.35s;
+}
+details[class~=dark]:not([open]) > :not(summary){
+  opacity: 0;
+  -webkit-transition: 0.35s;
+}
