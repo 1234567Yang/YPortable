@@ -207,30 +207,30 @@ p[class~=dark][class*=round-border] {
   border-radius:20px;
 }
 
-/*--input - text - password - search - url - tel - email - color --*/
+/*--input -text-password-search-url-tel-email-color - textarea --*/
 
-input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled), textarea[class~=bright]:not(:disabled) {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: solid;
   border-color: rgb(50,200,255);
   border-radius: 5px;
-  -webkit-transition-duration: 0.35s;
+  -webkit-transition: all 0.35s, width 0s, height 0s;
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder, textarea[class~=bright]:not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(150,230,255);
 }
-input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder, textarea[class~=bright]:not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(235,255,255);
   opacity: 1;
 }
 
-input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus, textarea[class~=bright]:not(:disabled):focus {
   outline: none !important;
   border-color: rgb(50,150,255) !important;
   color: rgb(50,150,255) !important;
@@ -239,28 +239,28 @@ input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[ty
 
 /*--*/
 
-input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled), textarea[class~=middle]:not(:disabled) {
   color: rgb(50,150,255);
   background: rgb(200,220,255);
   border-style: solid;
   border-color: rgb(50,150,255);
   border-radius: 5px;
-  -webkit-transition-duration: 0.35s;
+  -webkit-transition: all 0.35s, width 0s, height 0s;
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder, textarea[class~=middle]:not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(50,190,255);
 }
-input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder, textarea[class~=middle]:not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(50,190,255);
   opacity: 1;
 }
 
-input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled):focus, textarea[class~=middle]:not(:disabled):focus {
   outline: none !important;
   border-color: rgb(20,100,255) !important;
   color: rgb(20,100,255) !important;
@@ -269,28 +269,28 @@ input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[ty
 
 /*--*/
 
-input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled) {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled), textarea[class~=dark]:not(:disabled) {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: solid;
   border-color:rgb(50,180,220);
   border-radius: 5px;
-  -webkit-transition-duration: 0.35s;
+  -webkit-transition: all 0.35s, width 0s, height 0s;
   -webkit-animation-timing-function:background cubic-bezier(1,1,1,1,1,0);
   -webkit-animation-timing-function:color cubic-bezier(0,0,0,0,0,1);
 }
 
-input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-webkit-input-placeholder, textarea[class~=dark]:not(:disabled)::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(80,180,255);
 }
-input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled)::-moz-placeholder, textarea[class~=dark]:not(:disabled)::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(80,180,255);
   opacity: 1;
 }
 
-input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):focus:not(:disabled) {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):focus:not(:disabled), textarea[class~=dark]:not(:disabled):focus {
   outline: none !important;
   border-color: rgb(30,160,220) !important;
   color: rgb(180,240,255) !important;
@@ -299,7 +299,7 @@ input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type
 
 /*--input - disabled - text--*/
 
-input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled, textarea[class~=bright]:disabled {
   color: rgb(50,200,255);
   background: rgb(235,255,255);
   border-style: dotted;
@@ -309,11 +309,11 @@ input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[ty
   cursor:not-allowed;
 }
 
-input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder, textarea[class~=bright]:disabled::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(150,230,255);
 }
-input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder, textarea[class~=bright]:disabled::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(235,255,255);
   opacity: 1;
@@ -321,7 +321,7 @@ input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[ty
 
 /*--*/
 
-input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled, textarea[class~=middle]:disabled {
   color: rgb(50,150,255);
   background: rgb(200,220,255);
   border-style: dotted;
@@ -331,11 +331,11 @@ input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[ty
   cursor:not-allowed;
 }
 
-input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder, textarea[class~=middle]:disabled::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(50,190,255);
 }
-input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder, textarea[class~=middle]:disabled::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(50,190,255);
   opacity: 1;
@@ -343,7 +343,7 @@ input[class~=middle]:is([type=text],[type=password],[type=search],[type=url],[ty
 
 /*--*/
 
-input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled, textarea[class~=dark]:disabled {
   color: rgb(120,220,255);
   background: rgb(50,100,205);
   border-style: dotted;
@@ -353,18 +353,20 @@ input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type
   cursor:not-allowed;
 }
 
-input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-webkit-input-placeholder, textarea[class~=dark]:disabled::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: rgb(80,180,255);
 }
-input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder {
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled::-moz-placeholder, textarea[class~=dark]:disabled::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: rgb(80,180,255);
   opacity: 1;
 }
 
+/*--textarea-size-transition--*/
 
-/*--input - date - month - week - time - datetime - datetime-local --*/
+
+/*--input - date - month - week - time - datetime - datetime-local--*/
 
 input[class~=bright]:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
   color: rgb(50,200,255);
