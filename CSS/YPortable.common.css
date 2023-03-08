@@ -260,7 +260,7 @@ input[type=checkbox][class~=switch]:disabled::after{
   width:30px;
   height:17px;
   border-radius:10px;
-  -webkit-transform: translate(0px,-20px) !important;
+  -webkit-transform: translate(1px,-20px) !important;
   filter:grayscale(60%);
 }
 
