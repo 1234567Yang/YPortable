@@ -14,8 +14,11 @@
   margin-top:10%;
   margin-bottom:10%;
 }
-.round-border{
+.roundBorder{
   border-radius:20px;
+}
+.alignType{
+  -webkit-transform:translate(0px,2px); 
 }
 
 /*--*/
