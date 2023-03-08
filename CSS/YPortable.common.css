@@ -177,10 +177,10 @@ input[type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
 
 /*--input - checkbox - disabled --*/
 
-input[class~=dark][type=checkbox]:not([class*=switch]):disabled {
+input[type=checkbox]:not([class*=switch]):disabled {
   cursor:not-allowed;
 }
-input[class~=dark][type=checkbox]:not([class*=switch]):disabled + label {
+input[type=checkbox]:not([class*=switch]):disabled + label {
   border-style:none;
   border-radius:5px;
   cursor:not-allowed;
