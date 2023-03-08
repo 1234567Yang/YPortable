@@ -29,12 +29,12 @@
 
 /*--p - input-file--*/
 
-p[class~=bright],input[class~=bright][type=file], [class~=bright]:is(h1, h2, h3, h4, h5, h6) {
+p[class~=bright],input[class~=bright][type=file], [class~=bright]:is(h1, h2, h3, h4, h5, h6),label[class~=bright] {
   color:rgb(50,150,255);
   background:rgb(250,255,255);
 }
 /*--*/
-p[class~=dark],input[class~=dark][type=file], [class~=dark]:is(h1, h2, h3, h4, h5, h6) {
+p[class~=dark],input[class~=dark][type=file], [class~=dark]:is(h1, h2, h3, h4, h5, h6), label[class~=dark] {
   background:rgb(20,100,170);
   color:rgb(140,230,255);
 }
