@@ -1,0 +1,491 @@
+/*--button - input-submit - input-file-upload-button--*/
+
+[class~=bright]:is(button, input[type=submit]):not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
+  color:rgb(50,150,255);
+  background:rgb(225,255,255);
+}
+[class~=bright]:is(button, input[type=submit]):hover:not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
+  color:rgb(225,255,255);
+  background:rgb(50,150,255);
+}
+[class~=bright]:is(button, input[type=submit]):active:not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button:active{
+  color:rgb(205,255,255);
+  background:rgb(20,100,255);
+}
+/*--*/
+[class~=dark]:is(button, input[type=submit]):not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button {
+  background:rgb(0,80,150);
+  color:rgb(200,255,255);
+}
+[class~=dark]:is(button, input[type=submit]):hover:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
+  background:rgb(200,255,255);
+  color:rgb(0,80,150);
+}
+[class~=dark]:is(button, input[type=submit]):active:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:active{
+  background:rgb(220,250,255);
+  color:rgb(0,30,150);
+}
+
+/*--p - input-file--*/
+
+p[class~=bright],input[class~=bright][type=file], [class~=bright]:is(h1, h2, h3, h4, h5, h6) {
+  color:rgb(50,150,255);
+  background:rgb(250,255,255);
+}
+/*--*/
+p[class~=dark],input[class~=dark][type=file], [class~=dark]:is(h1, h2, h3, h4, h5, h6) {
+  background:rgb(20,100,170);
+  color:rgb(140,230,255);
+}
+
+/*--input -text-password-search-url-tel-email-color - textarea --*/
+
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number],[type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled), textarea[class~=bright]:not(:disabled) {
+  color: rgb(50,200,255);
+  background: rgb(245,255,255);
+  border-color: rgb(50,200,255);
+}
+
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number],[type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled)::-webkit-input-placeholder, textarea[class~=bright]:not(:disabled)::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(150,230,255);
+}
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number],[type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled)::-moz-placeholder, textarea[class~=bright]:not(:disabled)::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(235,255,255);
+  opacity: 1;
+}
+
+input[class~=bright]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number],[type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled):focus, textarea[class~=bright]:not(:disabled):focus {
+  outline: none !important;
+  color: rgb(50,150,255) !important;
+  -webkit-box-shadow: 1px 1px 5px rgb(30,150,255);
+}
+
+/*--*/
+
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number],[type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled), textarea[class~=dark]:not(:disabled) {
+  background:rgb(20,100,170);
+  color:rgb(140,230,255);
+  border-color:rgb(50,180,220);
+}
+
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number],[type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled)::-webkit-input-placeholder, textarea[class~=dark]:not(:disabled)::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgb(80,180,255);
+}
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number],[type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled)::-moz-placeholder, textarea[class~=dark]:not(:disabled)::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgb(80,180,255);
+  opacity: 1;
+}
+
+input[class~=dark]:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number],[type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled), textarea[class~=dark]:not(:disabled):focus {
+  outline: none !important;
+  border-color: rgb(30,160,220) !important;
+  color: rgb(180,240,255) !important;
+  -webkit-box-shadow: 1px 1px 5px rgb(30,160,220);
+}
+
+/*--input - checkbox --*/
+
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled) + label {
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+}
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class~=bright][type=checkbox]:not(:disabled) + label:hover {
+  -webkit-box-shadow: 1px 1px 1px rgb(205,255,255);
+}
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class~=bright][type=checkbox] + label:active {
+  -webkit-box-shadow: 1px 1px 5px rgb(180,235,255);
+}
+input[class~=bright][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
+  background:rgb(200,250,250);
+  color:rgb(40,140,240);
+}
+input[class~=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
+  border-color:rgb(20,150,255);
+  background: rgb(220,255,255);
+}
+input[class~=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
+  border-color:rgb(50,150,255);
+  background: rgb(240,255,255);
+}
+input[class~=bright][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
+  border-color: rgb(240,255,255);
+}
+input[class~=bright][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
+  border-color:rgb(50,150,255);
+
+}
+/*--*/
+input[class~=dark][type=checkbox]:not([class*=switch]):not(:disabled) + label {
+  color: rgb(120,220,255);
+  background: rgb(50,100,205);
+}
+input[class~=dark][type=checkbox]:not([class*=switch]):not(:disabled):hover, input[class~=dark][type=checkbox]:not(:disabled) + label:hover {
+  -webkit-box-shadow: 1px 1px 1px rgb(50,100,205);
+}
+input[class~=dark][type=checkbox]:not([class*=switch]):not(:disabled):active, input[class~=dark][type=checkbox]:not(:disabled) + label:active {
+  -webkit-box-shadow: 1px 1px 5px rgb(50,100,205);
+}
+input[class~=dark][type=checkbox]:not([class*=switch]):not(:disabled):checked + label {
+  color: rgb(120,230,255);
+  background: rgb(20,90,205);
+}
+input[class~=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
+  border-color:rgb(20,90,205);
+  background: rgb(100,180,255);
+}
+input[class~=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
+  border-color:rgb(50,50,255);
+  background: rgb(160,200,255);
+}
+input[class~=dark][type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
+  border-color:rgba(50,100,205,0);
+}
+input[class~=dark][type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
+  border-color:rgb(20,10,255);
+
+}
+
+/*-- input - checkbox - switch --*/
+
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled) + label {
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+}
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled)::before{
+  color:rgb(50,200,255);
+  border-color:rgb(50,200,255);
+  background: rgb(240,255,255);
+}
+input[type=checkbox][class~=bright][class*=switch]:checked:not(:disabled)::before{
+  border-color:rgb(50,150,255);
+  background: rgb(220,255,255);
+}
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled)::after{
+  background: rgb(50,200,255);
+}
+input[type=checkbox][class~=bright][class*=switch]:not(:disabled):checked::after{
+  background: rgb(50,150,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(30,150,255);
+}
+
+/*--*/
+
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled) + label {
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+}
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled)::before{
+  color:rgb(0,80,150);
+  border-color:rgb(0,80,150);
+  background: rgb(0,155,255);
+}
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled):checked::before{
+  border-color:rgb(0,20,100);
+  background:rgb(20,150,255);
+}
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled)::after{
+  background: rgb(0,80,150);
+}
+input[type=checkbox][class~=dark][class*=switch]:not(:disabled):checked::after{
+  -webkit-box-shadow: 1px 1px 5px rgb(0,80,150);
+  background:rgb(0,20,100);
+}
+
+/*--input - radio --*/
+
+input[class~=bright][type=radio]:not(:disabled) + label {
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+}
+input[class~=bright][type=radio]:not(:disabled):hover, input[class~=bright][type=radio]:not(:disabled) + label:hover {
+  -webkit-box-shadow: 1px 1px 1px rgb(205,255,255);
+}
+input[class~=bright][type=radio]:not(:disabled):active, input[class~=bright][type=radio]:not(:disabled) + label:active{
+  -webkit-box-shadow: 1px 1px 5px rgb(180,235,255);
+}
+input[class~=bright][type=radio]:not(:disabled):checked + label{
+  background:rgb(200,250,250);
+  color:rgb(40,140,240);
+}
+input[class~=bright][type=radio]:not(:disabled):checked::before {
+  border-color:rgb(20,150,255);
+  background: rgb(220,255,255);
+}
+input[class~=bright][type=radio]:not(:disabled):not(checked)::before {
+  border-color:rgb(50,150,255);
+  background: rgb(240,255,255);
+}
+input[class~=bright][type=radio]:not(:disabled):not(checked)::after {
+  border-color:rgb(240,255,255);
+}
+input[class~=bright][type=radio]:not(:disabled):checked::after {
+  border-color:rgb(50,150,255);
+  background:rgb(50,150,255);
+}
+/*--*/
+input[class~=dark][type=radio]:not(:disabled) + label {
+  color: rgb(120,220,255);
+  background: rgb(50,100,205);
+}
+input[class~=dark][type=radio]:not(:disabled):hover, input[class~=dark][type=radio]:not(:disabled) + label:hover {
+  -webkit-box-shadow: 1px 1px 1px rgb(150,200,205);
+}
+input[class~=dark][type=radio]:not(:disabled):active, input[class~=dark][type=radio]:not(:disabled) + label:active{
+  -webkit-box-shadow: 1px 1px 5px rgb(50,100,205);
+}
+input[class~=dark][type=radio]:not(:disabled):checked + label{
+  color: rgb(120,230,255);
+  background: rgb(20,90,205);
+}
+input[class~=dark][type=radio]:not(:disabled):checked::before {
+  border-color:rgb(20,90,205);
+  background: rgb(100,180,255);
+}
+input[class~=dark][type=radio]:not(:disabled):not(checked)::before {
+  border-color:rgb(50,50,255);
+  background: rgb(160,200,255);
+}
+input[class~=dark][type=radio]:not(:disabled):not(checked)::after {
+  border-color:rgba(50,100,205,0);
+}
+input[class~=dark][type=radio]:not(:disabled):checked::after {
+  border-color:rgb(20,10,255);
+  background:rgb(20,10,255);
+}
+
+/*--input - color --*/
+
+input[class~=bright][type=color]:not(:disabled)::-webkit-color-swatch:active{
+  background:rgb(120,230,255);
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(50,200,255);
+}
+input[class~=bright][type=color]:not(:disabled)::-webkit-color-swatch:hover{
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(130,230,255);
+}
+input[class~=bright][type=color]:not(:disabled)::-webkit-color-swatch {
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(160,230,255);
+}
+/*--*/
+input[class~=dark][type=color]:not(:disabled)::-webkit-color-swatch:active{
+  background:rgb(120,230,255);
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(10,20,255);
+}
+input[class~=dark][type=color]:not(:disabled)::-webkit-color-swatch:hover{
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(10,50,255);
+}
+input[class~=dark][type=color]:not(:disabled)::-webkit-color-swatch {
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(10,80,255);
+  -webkit-transition-duration: 0.35s;
+  }
+
+/*--input - range--*/
+
+input[class=bright][type=range]:not(:disabled){
+  background: linear-gradient(to right, rgb(50,150,255), rgb(120,250,255));
+}
+input[class=bright][type=range]:not(:disabled) + label{
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+}
+input[class=bright][type=range]:not(:disabled)::-webkit-slider-thumb {
+  -webkit-box-shadow:0px 0px 5px 1px rgb(100,200,255);
+  background:rgb(205,255,255);
+}
+input[class=bright][type=range]:not(:disabled)::-webkit-slider-thumb:hover{
+  background:rgb(160,230,255);
+}
+input[class=bright][type=range]:not(:disabled)::-webkit-slider-thumb:active{
+  -webkit-box-shadow:0px 0px 6px 1px rgb(50,150,255);
+  background:rgb(120,230,255);
+}
+/*--*/
+input[class=dark][type=range]:not(:disabled){
+  background: linear-gradient(to right, rgb(0,80,150), rgb(10,180,255));
+}
+input[class=dark][type=range]:not(:disabled) + label{
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+}
+input[class=dark][type=range]:not(:disabled)::-webkit-slider-thumb {
+  -webkit-box-shadow:0px 0px 5px 1px rgb(0,80,150);
+  background:rgb(50,150,200);
+}
+input[class=dark][type=range]:not(:disabled)::-webkit-slider-thumb:hover{
+  background:rgb(30,120,200);
+}
+input[class=dark][type=range]:not(:disabled)::-webkit-slider-thumb:active{
+  -webkit-box-shadow:0px 0px 6px 1px rgb(205,255,255);
+  background:rgb(30,100,180);
+}
+
+/*--table--*/
+
+table[class~=bright] {
+  background:rgb(250,255,255);
+  border-color:rgb(50,150,255);
+}
+table[class~=bright] th{
+  color:rgb(20,100,255);
+  background:rgb(250,255,255);
+}
+table[class~=bright] td{
+  color:rgb(30,120,255);
+}
+table[class~=bright] tr{
+  background:rgb(250,255,255);
+}
+table[class~=bright] tr:hover{
+   background:rgb(220,245,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(200,250,255);
+}
+
+/*--*/
+
+table[class~=dark] {
+  background: rgb(100,200,205);
+  border-color:rgb(50,10,255);
+}
+table[class~=dark] th{
+  color:rgb(100,230,255);
+  border-color:rgb(50,150,255);
+}
+table[class~=dark] td{
+  color:rgb(120,220,255);
+}
+table[class~=dark] tr{
+  background:rgb(50,100,205);
+}
+table[class~=dark] tr:hover{
+   background:rgb(10,50,210);
+}
+
+/*-- abbr --*/
+
+abbr[class~=bright]{
+  color: rgb(50,200,255);
+  background: rgb(235,255,255);
+  text-decoration-color: rgb(30,150,230);
+
+}
+abbr[class~=bright]:hover::after{
+  /*code from here: https://stackoverflow.com/questions/47695771/css-pseudo-element-tooltip-has-the-same-width-as-the-original-element*/
+  color: rgb(50,200,255);
+  background: rgba(235,255,255,0.8);
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation:Fadein 0.5s;
+}
+
+/*--*/
+
+abbr[class~=dark]{
+  background:rgb(20,100,170);
+  color:rgb(100,200,255);
+  text-decoration-color:rgb(30,150,230);
+}
+abbr[class~=dark]:hover::after{
+  background:rgb(20,100,170);
+  color:rgb(100,200,255);
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation:Fadein 0.5s;
+}
+
+/*-- select --*/
+
+select[class~=bright]:not(:disabled){
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+}
+select[class~=bright]:not(:disabled):hover{
+  color:rgb(20,120,230);
+  background:rgb(160,230,255);
+}
+select[class~=bright]:not(:disabled):active{
+  color:rgb(10,60,255);
+  background:rgb(120,230,255);
+}
+select[class~=bright]:not(:disabled) > option{
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+}
+
+/*--*/
+
+select[class~=dark]:not(:disabled){
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+}
+select[class~=dark]:not(:disabled):hover{
+  background:rgb(0,50,120);
+  color:rgb(0,130,220);
+}
+select[class~=dark]:not(:disabled):active{
+  background:rgb(0,20,100);
+  color:rgb(0,100,200);
+}
+select[class~=dark]:not(:disabled) > option{
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+}
+
+/*-- details --*/
+
+details[class~=bright] > summary{
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+}
+details[class~=bright] > summary:hover{
+  color:rgb(50,180,255);
+  background:rgb(190,255,255);
+}
+details[class~=bright] > :not(summary):not(details){
+  color:rgb(50,150,255);
+  background:rgb(205,255,255);
+  border-color:rgb(50,150,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(50,150,255);
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation:Fadein 0.5s;
+}
+details[class~=bright]:not([open]) > summary::before{
+  color:rgb(50,150,255);
+}
+details[class~=bright][open] > summary::before{
+  color:rgb(50,150,255);
+}
+/*--*/
+details[class~=dark] > summary{
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+}
+details[class~=dark] > summary:hover{
+  background:rgb(0,50,150);
+  color:rgb(0,130,255);
+}
+details[class~=dark] > :not(summary):not(details){ /*:not(details) to avoid 2nd details tag BUG*/
+  background:rgb(0,80,150);
+  color:rgb(0,155,255);
+  border-color:rgb(0,155,255);
+  -webkit-box-shadow: 1px 1px 5px rgb(0,155,255);
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation:Fadein 0.5s;
+}
+details[class~=dark]:not([open]) > summary::before{
+  color:rgb(0,155,255);
+}
+details[class~=dark][open] > summary::before{
+  color:rgb(0,155,255);
+}
+
+/*-- animation --*/
+@keyframes Fadein
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
