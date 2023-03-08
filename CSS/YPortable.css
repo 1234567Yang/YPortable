@@ -198,10 +198,12 @@ input[type=checkbox][class~=dark][class*=switch]:not(:disabled):checked::after{
 
 /*-- input - checkbox - switch -disabled --*/
 
-input[type=checkbox][class~=dark][class*=switch]:disabled::after{
+input[type=checkbox][class*=switch]:disabled::after{
+  background:rgb(200,200,200);
+}
+input[type=checkbox][class*=switch]:disabled::before{
   background:rgb(250,250,250);
 }
-
 /*--input - radio --*/
 
 input[class~=bright][type=radio]:not(:disabled) + label {
@@ -264,11 +266,13 @@ input[class~=dark][type=radio]:not(:disabled):checked::after {
   background:rgb(20,10,255);
 }
 
-/*--input - radio --*/
-input[class~=dark][type=radio]:disabled::after {
+/*--input - radio -disabled --*/
+input[type=radio]:disabled::before {
   background:rgb(250,250,250);
 }
-
+input[type=radio]:disabled::after {
+  background:rgb(250,250,250);
+}
 /*--input - color --*/
 
 input[class~=bright][type=color]:not(:disabled)::-webkit-color-swatch:active{
