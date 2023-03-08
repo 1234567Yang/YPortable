@@ -461,8 +461,6 @@ abbr:hover::after{
   font-size:20px;
   overflow:hidden;
   opacity: 0;
-  -webkit-animation-delay:0.5s;
-  -webkit-animation-fill-mode: forwards;
 }
 
 /*-- select --*/
