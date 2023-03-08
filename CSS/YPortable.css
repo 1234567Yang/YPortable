@@ -1,3 +1,4 @@
+
 /*--button - input-submit - input-file-upload-button--*/
 
 [class~=bright]:is(button, input[type=submit]):not(:disabled),input[class~=bright][type=file]:not(:disabled)::-webkit-file-upload-button {
@@ -193,6 +194,11 @@ input[type=checkbox][class~=dark][class*=switch]:not(:disabled)::after{
 input[type=checkbox][class~=dark][class*=switch]:not(:disabled):checked::after{
   -webkit-box-shadow: 1px 1px 5px rgb(0,80,150);
   background:rgb(0,20,100);
+}
+
+/*-- input - checkbox - switch -disabled --*/
+input[type=checkbox][class~=dark][class*=switch]:disabled{
+  background:rgb(250,250,250)
 }
 
 /*--input - radio --*/
