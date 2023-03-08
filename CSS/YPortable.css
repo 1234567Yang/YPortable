@@ -197,8 +197,9 @@ input[type=checkbox][class~=dark][class*=switch]:not(:disabled):checked::after{
 }
 
 /*-- input - checkbox - switch -disabled --*/
-input[type=checkbox][class~=dark][class*=switch]:disabled{
-  background:rgb(250,250,250)
+
+input[type=checkbox][class~=dark][class*=switch]:disabled::after{
+  background:rgb(250,250,250);
 }
 
 /*--input - radio --*/
@@ -261,6 +262,11 @@ input[class~=dark][type=radio]:not(:disabled):not(checked)::after {
 input[class~=dark][type=radio]:not(:disabled):checked::after {
   border-color:rgb(20,10,255);
   background:rgb(20,10,255);
+}
+
+/*--input - radio --*/
+input[class~=dark][type=radio]:disabled::after {
+  background:rgb(250,250,250);
 }
 
 /*--input - color --*/
