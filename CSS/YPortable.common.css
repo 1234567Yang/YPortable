@@ -1,0 +1,531 @@
+/*Common*/
+.selfFit{
+  display:inline-block;
+  word-break:break-word;
+}
+.textCenter{
+  text-align:center;
+}
+.blockCenterHorizontal{
+  margin-right:10%;
+  margin-left:10%;
+}
+.blockCenterVertical{
+  margin-top:10%;
+  margin-bottom:10%;
+}
+.round-border{
+  border-radius:20px;
+}
+/*--*/
+
+.superBigSize{
+  min-width:300px;
+  min-height:100px;
+  font-size:80px;
+}
+.bigSize{
+  min-width:150px;
+  min-height:65px;
+  font-size:30px;
+}
+.middleSize{
+  min-width:80px;
+  min-height:30px;
+  font-size:20px;
+}
+.smallSize{
+  min-width:50px;
+  min-height:20px;
+  font-size:15px;
+}
+.superSmallSize{
+  min-width:20px;
+  min-height:15px;
+  font-size:5px;
+}
+
+
+/*--button - input-submit - input-file-upload-button - details[class~=bright] > summary hover and active--*/
+
+:is(button, input[type=submit]):not(:disabled),input[type=file]:not(:disabled)::-webkit-file-upload-button {
+  border-style:none;
+  border-radius:5px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+}
+:is(button, input[type=submit]):not(:disabled):active,input[type=file]:not(:disabled)::-webkit-file-upload-button:active{
+  -webkit-transition-duration: 0.1s;
+}
+
+/*--button - input-submit - input-file-upload-button - disabled--*/
+
+:is(button, input[type=submit]):disabled,input[type=file]:disabled::-webkit-file-upload-button {
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+
+/*--p - input-file - h1 - h6--*/
+
+p,input[type=file], :is(h1, h2, h3, h4, h5, h6) {
+  border-radius:2px;
+}
+
+/*--input -text-password-search-url-tel-email-color - textarea --*/
+
+input:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):not(:disabled), textarea:not(:disabled) {
+  border-style: solid;
+  border-radius: 5px;
+  -webkit-transition: all 0.35s, width 0s, height 0s;
+}
+
+input:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):focus:not(:disabled), textarea:not(:disabled):focus {
+  outline: none !important;
+}
+
+/*--input - disabled - text--*/
+
+input:is([type=text],[type=password],[type=search],[type=url],[type=tel],[type=email],[type=number]):disabled, textarea:disabled {
+  border-style: dotted;
+  border-radius: 5px;
+  filter:grayscale(40%);
+  cursor:not-allowed;
+}
+
+/*--input - date - month - week - time - datetime - datetime-local--*/
+
+input:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):not(:disabled) {
+  border-style: solid;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.35s;
+}
+
+input:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):focus:not(:disabled) {
+  outline: none !important;
+}
+
+/*--input - date - month - week - time - datetime - datetime-local - disabled --*/
+
+input:is([type=date],[type=month],[type=week],[type=time],[type=datetime],[type=datetime-local]):disabled {
+  border-style: dotted;
+  border-radius: 5px;
+  filter:grayscale(40%);
+  cursor:not-allowed;
+}
+
+/*--input - checkbox --*/
+
+input[type=checkbox]:not([class*=switch]){
+  cursor:pointer;
+}
+input[type=checkbox]:not([class*=switch]):not(:disabled) + label {
+  border-style:none;
+  border-radius:5px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+}
+input[type=checkbox]:not([class*=switch]):not(:disabled):active, input[type=checkbox]:not(:disabled) + label:active {
+  -webkit-transition-duration: 0.1s;
+}
+input[type=checkbox]:not([class*=switch]):checked:not(:disabled)::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  -webkit-transition: 0.35s;
+}
+input[type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  border-radius: 3px;
+}
+input[type=checkbox]:not([class*=switch]):not(checked):not(:disabled)::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  border: solid;
+  width: 0px;
+  height: 0px;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg) translate(-5px,-12px) !important; 
+  position: relative;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: 0.35s;
+}
+input[type=checkbox]:not([class*=switch]):checked:not(:disabled)::after {
+  content: "";
+  display: block;
+  visibility: visible;
+  width: 5px;
+  height: 12px;
+  border: solid;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg) translate(-8px,-15px) !important; 
+  position: relative;
+
+}
+
+/*--input - checkbox - disabled --*/
+
+input[class~=dark][type=checkbox]:not([class*=switch]):disabled {
+  cursor:not-allowed;
+}
+input[class~=dark][type=checkbox]:not([class*=switch]):disabled + label {
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+input[type=checkbox]:not([class*=switch]):disabled::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  border-radius: 3px;
+  filter:grayscale(60%);
+}
+
+/*-- input - checkbox - switch --*/
+
+input[type=checkbox][class~=switch]:not(:disabled){
+  width: 50px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+}
+input[type=checkbox][class*=switch]:not(:disabled) + label {
+  border-radius: 5px;
+}
+input[type=checkbox][class*=switch]:not(:disabled)::before{
+  content: "\00A0on";
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 15px;
+  border: 2px solid;
+  border-radius: 10px;
+  -webkit-transform: translate(0px,-2px) !important;
+  -webkit-transition-duration: 0.35s;
+}
+input[type=checkbox][class~=switch]:not(:disabled)::after{
+  content: "";
+  display: block;
+  position: relative;
+  width:30px;
+  height:17px;
+  border-radius:10px;
+  -webkit-transform: translate(0px,-20px) !important;
+  -webkit-transition-duration: 0.35s;
+}
+input[type=checkbox][class~=switch]:not(:disabled):checked::after{
+  -webkit-transform: translate(23px,-20px) !important;
+}
+
+/*-- input[type=checkbox] - checkbox - switch - disabled --*/
+
+input[type=checkbox][class~=switch]:disabled{
+  cursor:not-allowed;
+  width: 50px;
+}
+input[type=checkbox][class~=switch]:disabled + label {
+  border-radius: 5px;
+  filter:grayscale(60%);
+}
+input[type=checkbox][class~=switch]:disabled::before{
+  content: "";
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 15px;
+  border: 2px solid;
+  border-radius: 10px;
+  -webkit-transform: translate(0px,-2px) !important;
+  filter:grayscale(60%);
+}
+input[type=checkbox][class~=switch]:disabled::after{
+  content: "";
+  display: block;
+  position: relative;
+  width:30px;
+  height:17px;
+  border-radius:10px;
+  -webkit-transform: translate(0px,-20px) !important;
+  filter:grayscale(60%);
+}
+
+/*--input - radio --*/
+
+input[type=radio]:not(:disabled){
+  cursor:pointer;
+}
+input[type=radio]:not(:disabled) + label {
+  border-style:none;
+  border-radius:5px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+}
+input[type=radio]:not(:disabled):active, input[class~=dark][type=radio]:not(:disabled) + label:active{
+  -webkit-transition-duration: 0.1s;
+}
+input[type=radio]:not(:disabled):checked::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  -webkit-transition: 0.35s;
+}
+input[type=radio]:not(:disabled):not(checked)::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  border-radius: 25px;
+}
+input[type=radio]:not(:disabled):not(checked)::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  border: solid;
+  width: 0px;
+  height: 0px;
+  border-width: 0px 0px 0px 0px;
+  -webkit-transform: translate(8px,-8px) !important; 
+  position: relative;
+  -webkit-transition: 0.35s;
+}
+input[type=radio]:not(:disabled):checked::after {
+  content: "";
+  display: block;
+  visibility: visible;
+  width: 15px;
+  height: 15px;
+  border: solid;
+  border-width: 0px 0px 0px 0px;
+  border-radius:20px;
+  -webkit-transform: translate(0px,-15px) !important; 
+  position: relative;
+}
+
+/*--input - radio - disabled --*/
+
+input[type=radio]:disabled{
+  cursor:not-allowed;
+}
+input[type=radio]:disabled + label {
+  border-style:none;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+input[type=radio]:disabled::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  border-radius: 25px;
+  filter:grayscale(60%);
+}
+
+/*--input - color --*/
+
+input[type=color]:not(:disabled){
+  visibility:hidden;
+}
+input[type=color]:not(:disabled)::-webkit-color-swatch:active{
+  float:left;
+  border-style:none;
+  border-radius:10px;
+  -webkit-transition-duration: 0.1s;
+}
+input[type=color]:not(:disabled)::-webkit-color-swatch {
+  border-radius:10px;
+  display: block;
+  position: relative;
+  visibility:visible !important;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+  }
+
+/*--input - color -disabled --*/
+
+input[type=color]:disabled{
+  visibility:hidden;
+}
+input[type=color]:disabled::-webkit-color-swatch {
+  border-radius:10px;
+  display: block;
+  position: relative;
+  visibility:visible !important;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+  }
+
+/*--input - range--*/
+
+input[type="range"]:not(:disabled){
+  outline: none;
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius:5px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+}
+input[type="range"]:not(:disabled) + label{
+  border-radius:5px;
+  display: inline-block;
+}
+input[type="range"]:not(:disabled)::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height:12px;
+  border-radius:10px;
+  -webkit-transition-duration: 0.35s;
+}
+input[class="dark"][type="range"]:not(:disabled)::-webkit-slider-thumb:active{
+  width: 15px;
+  height:15px;
+  border-radius:15px;
+}
+
+/*--input - range - disabled--*/
+
+input[class="dark"][type="range"]:disabled{
+  outline: none;
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius:5px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+input[class="dark"][type="range"]:disabled + label{
+  border-radius:5px;
+  display: inline-block;
+  filter:grayscale(60%);
+}
+input[type="range"]:disabled::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height:12px;
+  border-radius:10px;
+  filter:grayscale(60%);
+}
+
+/*--table--*/
+
+table {
+  border-radius:5px;
+}
+table th{
+  border-radius:5px;
+}
+table td{
+  border-radius:5px;
+}
+table tr{
+   -webkit-transition-duration: 0.1s;
+}
+
+/*-- abbr --*/
+
+abbr{
+  border-radius: 2px;
+  text-decoration: underline dotted;
+  position:relative;
+}
+abbr:hover::after{
+  content:attr(hint);
+  position:absolute;
+  padding: 2px 5px;
+  bottom: 0; right: 0;
+  transform: translate(100%, 50%);
+  border-radius:2px;
+  width:500px;
+  height:20px;
+  font-size:20px;
+  overflow:hidden;
+  opacity: 0;
+  -webkit-animation:FadeinABBR 0.5s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes FadeinABBR
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/*-- select --*/
+
+select:not(:disabled){
+  border-style:none;
+  outline:none !important;
+  border-radius:2px;
+  cursor:pointer;
+  -webkit-transition-duration: 0.35s;
+}
+select:not(:disabled):active{
+  -webkit-transition-duration: 0.1s;
+}
+/*-- select - disabled --*/
+
+select:disabled{
+  border-style:none;
+  outline:none !important;
+  border-radius:2px;
+  cursor:not-allowed;
+  filter:grayscale(60%);
+}
+
+/*-- details --*/
+
+details{
+  position: relative;
+  transform:translate(15px,0px);
+}
+details > summary{
+  border-radius:5px;
+  -webkit-transition-duration: 0.35s;
+  cursor:pointer;
+}
+details > :not(summary):not(details){ /*:not(details) to avoid 2nd details tag BUG*/
+  border-radius:5px;
+  border:solid 1px;
+}
+details:not([open]) > summary::before{
+  content: "▶";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  transform-origin: center center;
+  -webkit-transform: rotate(0deg) translate(-15px,0px) !important; 
+  -webkit-transition-duration: 0.35s;
+}
+details > summary::before{
+  content: "▶";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  transform-origin: center center;
+  -webkit-transform: rotate(90deg) translate(5px,0px) !important; 
+  -webkit-transition-duration: 0.35s;
+}
+details > summary:first-of-type {
+  list-style-type: none;
+}
