@@ -275,7 +275,7 @@ input[type=radio]:not(:disabled) + label {
   cursor:pointer;
   -webkit-transition-duration: 0.35s;
 }
-input[type=radio]:not(:disabled):active, input[class~=dark][type=radio]:not(:disabled) + label:active{
+input[type=radio]:not(:disabled):active,[type=radio]:not(:disabled) + label:active{
   -webkit-transition-duration: 0.1s;
 }
 input[type=radio]:not(:disabled):checked::before {
