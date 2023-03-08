@@ -461,15 +461,8 @@ abbr:hover::after{
   font-size:20px;
   overflow:hidden;
   opacity: 0;
-  -webkit-animation:FadeinABBR 0.5s;
   -webkit-animation-delay:0.5s;
   -webkit-animation-fill-mode: forwards;
-}
-
-@keyframes FadeinABBR
-{
-	from {opacity: 0;}
-	to {opacity: 1;}
 }
 
 /*-- select --*/
