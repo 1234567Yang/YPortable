@@ -16,15 +16,15 @@
 /*--*/
 [class~=dark]:is(button, input[type=submit]):not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button {
   background:rgb(0,80,150);
-  color:rgb(200,255,255);
+  color:rgb(180,255,255);
 }
 [class~=dark]:is(button, input[type=submit]):hover:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:hover {
   background:rgb(0,50,120);
-  color:rgb(0,130,220);
+  color:rgb(200,255,255);
 }
 [class~=dark]:is(button, input[type=submit]):active:not(:disabled),input[class~=dark][type=file]:not(:disabled)::-webkit-file-upload-button:active{
   background:rgb(0,20,100);
-  color:rgb(0,100,200);
+  color:rgb(230,255,255);
 }
 
 /*--p - input-file--*/
