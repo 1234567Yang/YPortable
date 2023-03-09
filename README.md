@@ -30,15 +30,8 @@ A lightweight, concise, and easy-to-use CSS framework.
 - Adding class="bright/middle/dark" to change the darkness.
 <br>
 
-### Want examples? Here is one:
+### Example:
 
-1: Copy the CSS file [Here](https://github.com/1234567Yang/YPortable/tree/main/CSS)
-
-
-2: Open an online HTML testing website such as [This](https://c.runoob.com/front-end/61/)
-
-
-3: Adding this to your code to see the result:
 
 ```html
 <button class="bright bigSize selfFit" >YPortable</button>
