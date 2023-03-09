@@ -6,11 +6,12 @@
 </p>
 
 <p align="center">
-A lightweight, concise, and easy-to-use CSS framework for beginners.
+轻量易用的框架。
+A lightweight, concise, and easy-to-use CSS framework.
 </p>
 
 
-
+<p>以下内容自己用谷歌翻译。</p>
 ## Guide Table:
 
 - [Quick start](#QuickStart)
