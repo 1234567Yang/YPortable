@@ -7,6 +7,7 @@
 
 <p align="center">
 轻量易用的框架。
+  <br>
 A lightweight, concise, and easy-to-use CSS framework.
 <br>
 以下内容自己用谷歌翻译。
