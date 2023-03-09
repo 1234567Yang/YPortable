@@ -56,9 +56,9 @@ It is suitable for beginners to learn CSS, as well as for beginners to build web
 <br>
 This is also a program that help myself learn CSS, I am both a rookie and a poor aesthetic ability person. In this case, this repository may be not brilliant.
 
-<p align="center">
+<!--p align="center">
       <img width="85%" src="https://github.com/1234567Yang/YPortable/blob/main/images/ViewEX.gif?raw=true">
-</p>
+</p-->
 
 ## DistinguishingFeature:
 
@@ -89,7 +89,6 @@ This is also a program that help myself learn CSS, I am both a rookie and a poor
 ## Contribution:
 Thanks for those who contributed this repository.
 <br>
-Contribute requirement:
 - If you add a new kind of element, please provide bright/middle/dark version of that element, and formarting as other element by using ```/*--*/```
 - Please only contribute on YPortable.blue.css, because other files will be transformed by program.
 - Just create a Pull requests to contribute and **any** contribution is acceptable if there are no problems.
